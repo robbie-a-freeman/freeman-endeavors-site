@@ -1,0 +1,40 @@
+{
+  "name": "freeman-endeavors",
+  "version": "1.0.0",
+  "private": true,
+  "description": "freeman-endeavors",
+  "author": "Robert Freeman",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "gatsby": "^5.2.0",
+    "gatsby-plugin-emotion": "^8.2.0",
+    "gatsby-plugin-google-analytics": "^5.2.0",
+    "gatsby-plugin-image": "^3.2.0",
+    "gatsby-plugin-netlify-cms": "^7.2.0",
+    "gatsby-plugin-sharp": "^5.2.0",
+    "gatsby-plugin-sitemap": "^6.2.0",
+    "gatsby-source-filesystem": "^5.2.0",
+    "gatsby-transformer-sharp": "^5.2.0",
+    "netlify-cms-app": "^2.15.72",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.10",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
+    "typescript": "^4.9.3"
+  }
+}
