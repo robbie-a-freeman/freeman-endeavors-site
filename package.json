@@ -1,40 +1,37 @@
 {
-  "name": "freeman-endeavors",
-  "version": "1.0.0",
-  "private": true,
-  "description": "freeman-endeavors",
-  "author": "Robert Freeman",
-  "keywords": [
-    "gatsby"
-  ],
-  "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@emotion/react": "^11.0.0",
-    "@emotion/styled": "^11.0.0",
-    "gatsby": "^4.0.0",
-    "gatsby-plugin-emotion": "^7.0.0",
-    "gatsby-plugin-google-analytics": "^4.0.0",
-    "gatsby-plugin-image": "^2.0.0",
-    "gatsby-plugin-netlify-cms": "^4.0.0",
-    "gatsby-plugin-sharp": "^4.0.0",
-    "gatsby-plugin-sitemap": "^5.0.0",
-    "gatsby-source-filesystem": "^4.0.0",
-    "gatsby-transformer-sharp": "^4.0.0",
-    "netlify-cms-app": "^2.9.0",
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0"
-  },
-  "devDependencies": {
-    "@types/node": "^17.0.0",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
-    "typescript": "^4.9.3"
-  }
+	"name": "my-app",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"test": "playwright test",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"test:unit": "vitest",
+		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+		"format": "prettier --plugin-search-dir . --write ."
+	},
+	"devDependencies": {
+		"@fontsource/fira-mono": "^4.5.10",
+		"@neoconfetti/svelte": "^1.0.0",
+		"@playwright/test": "^1.28.1",
+		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/kit": "next",
+		"@types/cookie": "^0.5.1",
+		"@typescript-eslint/eslint-plugin": "^5.45.0",
+		"@typescript-eslint/parser": "^5.45.0",
+		"eslint": "^8.28.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-svelte3": "^4.0.0",
+		"prettier": "^2.8.0",
+		"prettier-plugin-svelte": "^2.8.1",
+		"svelte": "^3.54.0",
+		"svelte-check": "^2.9.2",
+		"tslib": "^2.4.1",
+		"typescript": "^4.9.3",
+		"vite": "^4.0.0",
+		"vitest": "^0.25.3"
+	},
+	"type": "module"
 }
