@@ -1,19 +1,26 @@
 <script>
 	import Header from './Header.svelte';
 	import './styles.css';
+	import { fade } from 'svelte/transition';
+	import { onMount } from 'svelte';
+
+	let loaded = false;
+	onMount(() => loaded = true);
 </script>
 
-<div class="app">
-	<Header />
+	<div class="app">
+		{#if loaded}
+		<Header />
 
-	<main>
-		<slot />
-	</main>
+		<main in:fade="{{duration: 2000}}">
+			<slot />
+		</main>
 
-	<footer>
-		<p>Copyright © Freeman Endeavors LLC</p>
-	</footer>
-</div>
+		<footer>
+			<p>Copyright © Freeman Endeavors LLC</p>
+		</footer>
+		{/if}
+	</div>
 
 <style>
 	.app {

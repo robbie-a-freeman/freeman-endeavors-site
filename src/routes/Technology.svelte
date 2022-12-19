@@ -44,7 +44,6 @@
     :global(.tech.highlighted) {
         transition: 1s;
         box-shadow: 0 0 5px #ffee10;
-        text-shadow: 0 0 5px #ffee10;
     }
 
     .tech img {
@@ -57,12 +56,13 @@
 
     .tech .tooltip {
         visibility: hidden;
-        width: 120px;
+        width: fit-content;
         background-color: black;
         color: #fff;
         text-align: center;
         border-radius: 6px;
-        padding: 5px 0;
+        padding: 5px 10px;
+        font-family: 'Roboto';
 
         /* Position the tooltip */
         position: absolute;

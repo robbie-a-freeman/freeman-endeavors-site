@@ -21,6 +21,7 @@
 			div.scrollIntoView();
 		}
 	}
+
 </script>
 
 <svelte:head>
@@ -30,7 +31,7 @@
 
 <section>
 	<span class="welcome">
-		<h1>Hi, I'm Robbie.</h1>
+			<h1>Hi, I'm Robbie.</h1>
 		<h2>I do software consulting.</h2>
 		<h2>How can I help you?</h2>
 
@@ -327,6 +328,7 @@
 		background-repeat: no-repeat;
 		background-position: top;
 		color: white;
+		max-height: 650px;
 	}
 	.call-to-action h1 {
 		text-align: left;
@@ -345,6 +347,17 @@
 		top: 300px;
 		left: 250px;
 	}
+
+	@media only screen and (max-width: 650px) {
+		.call-to-action a {
+			left: calc(var(--variable-width) / 3);
+		}
+		.expertise .service-blurb:nth-child(2n) {
+			padding: 0px;
+			border-left: none;
+		}
+	}
+
 	.contact {
 		color: var(--off-white-color);
 		width: 80%;
@@ -369,6 +382,7 @@
 		border: none;
 		padding: 8px;
 		outline: none;
+		font-family: 'Roboto';
 	}
 	.contact form textarea {
 		width: 100%;
@@ -378,6 +392,7 @@
 		height: 300px;
 		border: none;
 		outline: none;
+		font-family: 'Roboto';
 	}
 	.contact form input::placeholder {
 		font-style: italic;

@@ -71,7 +71,7 @@
 		flex-direction: column;
 		padding: 0 2.5rem 0 3rem; /* needed padding for letter spacing offset */
 		line-height: 3px;
-		min-width: 400px;
+		min-width: 425px;
 	}
 	nav #home-link a #second-header-line {
 		font-size: 1.3rem;

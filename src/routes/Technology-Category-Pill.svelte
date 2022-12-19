@@ -36,6 +36,10 @@
 		position: relative;
 		cursor: pointer;
 	}
+	.tech-pill:hover {
+		background-color: var(--off-white-color) !important;
+		color: var(--secondary-color) !important
+	}
 	:global(.tech-pill.selected) {
 		background-color: var(--off-white-color) !important;
 		color: var(--secondary-color) !important
