@@ -81,7 +81,10 @@
 		color: var(--primary-color-2);
 	}
 
-	#home-link a:hover {
-		color: #000;
+	h3 {
+		font-size: 16px;
+	}
+	#second-header-line {
+		font-size: 24px !important;
 	}
 </style>
