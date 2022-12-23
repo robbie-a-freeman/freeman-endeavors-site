@@ -57,7 +57,7 @@
 		align-items: center;
 		padding: 12px;
 		color: #fff;
-		background-color: var(--primary-color);
+		background-color: var(--secondary-color);
 		font-family: 'Roboto';
 	}
 
