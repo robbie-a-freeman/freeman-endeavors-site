@@ -25,10 +25,10 @@
 		display: flex;
 		justify-content: space-between;
 		--background: var(--secondary-color);
+		margin: auto;
 	}
 
 	nav {
-		width: 100%;
 		color: var(--off-white-color);
 		height: 100%;
 	}

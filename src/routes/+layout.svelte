@@ -30,6 +30,16 @@
 		background-color: var(--secondary-color);
 	}
 
+	:global(html) {
+		background-color: var(--secondary-color);
+		width:100%;
+	}
+
+	:global(body) {
+		width: fit-content;
+		
+	}
+
 	main {
 		flex: 1;
 		display: flex;
@@ -58,6 +68,16 @@
 	@media (min-width: 480px) {
 		footer {
 			padding: 12px 0;
+		}
+	}
+	@media (min-width: 1100px) {
+		:global(body) {
+			display: contents;
+		}
+	}
+	@media (max-width: 1100px) {
+		:global(body) {
+			padding-left: 50px;
 		}
 	}
 </style>
