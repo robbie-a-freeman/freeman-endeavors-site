@@ -4,47 +4,68 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-A single-page marketing site for **Freeman Endeavors LLC** (software consulting). Built with SvelteKit + TypeScript, deployed to Netlify via `@sveltejs/adapter-netlify`. The package was scaffolded by `create-svelte` and still carries the placeholder name `my-app` in `package.json`.
+Lead-generation marketing site for **Freeman Endeavors LLC** (software consulting). SvelteKit 2 + Svelte 5 + TypeScript, deployed to Netlify via `@sveltejs/adapter-netlify`.
 
 ## Commands
 
-Package manager is **yarn** (see `netlify.toml` build command and `yarn.lock`), though `npm run` works for any script in `package.json`.
+Package manager is **npm** (the `netlify.toml` build command runs `npm ci && npm run build`).
 
-- `yarn dev` — Vite dev server with HMR
-- `yarn build` — production build (Netlify adapter output)
-- `yarn preview` — serve the production build locally on :4173
-- `yarn check` — `svelte-kit sync` + `svelte-check` against `tsconfig.json`
-- `yarn lint` — Prettier check + ESLint
-- `yarn format` — Prettier write
-- `yarn test` — Playwright E2E (builds + previews first, per `playwright.config.ts`)
-- `yarn test:unit` — Vitest
-
-⚠️ `tests/test.ts` asserts an `/about` page that doesn't exist in this site — the Playwright suite will fail until the test is updated or removed.
+- `npm run dev` — Vite dev server with HMR
+- `npm run build` — production build (Netlify adapter output) — `prebuild` runs content validation first
+- `npm run preview` — serve the production build locally on :4173
+- `npm run check` — `svelte-kit sync` + `svelte-check`
+- `npm run lint` — Prettier check + ESLint
+- `npm run format` — Prettier write
+- `npm run test:unit` — Vitest unit suite
+- `npm run test` — Playwright E2E (builds + previews first)
 
 ## Architecture
 
-The entire site is one route: `src/routes/+page.svelte`. There is no client/server data loading beyond a trivial `+page.ts`, and no other pages — internal nav uses hash anchors (`#expertise`, `#contact`) and JS `scrollIntoView`, not SvelteKit routing.
+Routes live under `src/routes/`, components under `src/lib/components/`. mdsvex (`.svelte.md`) drives long-form content with frontmatter validated by Zod.
 
-**Component layout** — components live alongside the page in `src/routes/` (not under `src/lib/`):
-- `+layout.svelte` — header/footer chrome, 2s fade-in gated on `onMount` (`loaded` flag prevents SSR flash)
-- `Header.svelte`, `Button.svelte` — chrome and a click-dispatching button
-- `Technology.svelte` + `Technology-Category-Pill.svelte` — the filterable tech stack grid
+**Routes**
+- `/` — homepage with asymmetric editorial hero
+- `/services/` — three anchored sections (#audit / #fractional / #modernization)
+- `/case-studies/` — index listing; each `<slug>/+page.svelte.md` is one anonymized engagement
+- `/approach/` — values + methodology + team
+- `/contact/` — Cal.com inline embed (lazy-loaded via IntersectionObserver) with mailto fallback
+- `/writing/` — essay index; each `<slug>/+page.svelte.md` is one long-form piece
+- `/sitemap.xml` — prerendered XML sitemap (`src/routes/sitemap.xml/+server.ts`)
+- `/+error.svelte` — 404
 
-**Filter state** — `src/ts/active-technology-filter.ts` exports a single Svelte `writable` store (`filter_category`). Pills write to it on click; tech tiles subscribe and toggle a `.highlighted` class by directly mutating `tech.className`. Clicking the active pill clears the filter (toggle behavior). This is the only piece of cross-component state in the app.
+**Shared components (`src/lib/components/`)**
+- `Meta.svelte` — head block: title, description, OG, Twitter, canonical (HTML-escapes description against meta-tag injection)
+- `BookCallCTA.svelte` — single source of truth for the locked CTA copy ("Book a 45-minute architecture call") and `/contact/` target
+- `Button.svelte` — Primary / Ghost / Ink variants with `default` / `large` sizes
+- `Header.svelte` — multi-route nav, mobile drawer, active-route brick underline
+- `Footer.svelte` — three-column footer with site nav + contact
+- `EditorialList.svelte` — shared row layout for `/case-studies/` and `/writing/` indexes
+- `SectionMarker.svelte` — `§ NN · LABEL` glyph
+- `StatBlock.svelte` — display-figure + caption stat tiles (ROI band on case studies)
+- `CaseStudyMeta.svelte` — Surface-2 key-value meta block at top of each case study
+- `layouts/CaseStudy.svelte`, `layouts/Essay.svelte` — mdsvex page wrappers
 
-**Contact form** — `+page.svelte` posts via `@emailjs/browser` (`emailjs.sendForm`) with hardcoded service/template/public-key IDs. On submit, the form element is hidden and a thank-you div is unhidden by direct DOM manipulation (`getElementById().setAttribute('hidden', '')`) rather than reactive state.
+**Content infrastructure (`src/lib/content/`)**
+- `schema.ts` — Zod schemas for case-study + essay frontmatter
+- `loaders.ts` — `loadCaseStudies()`, `loadEssays()` — typed glob loaders, empty-array fallback
+- `scripts/validate-content.ts` — prebuild step that validates every frontmatter file against the Zod schemas
+
+**Site config (`src/lib/config.ts`)** — site URL, Cal.com slug, Plausible event name, audit price. Single source of truth for cross-cutting constants.
 
 **Styling**
-- Theme tokens (`--primary-color`, `--secondary-color`, `--off-white-color`, `--primary-color-2`) and `@font-face` rules for Roboto / Roboto-Bold / Roboto-Flex live in `src/routes/styles.css`, imported once from `+layout.svelte`.
-- Font files and all imagery live in `static/` and are referenced by absolute paths (`/fonts/...`, `/tech-*.png`, `/expertise-*.png`).
-- Most layout is per-component `<style>` blocks with media queries for mobile (breakpoints around 650px, 997px, 1100px).
+- Tokens (color, type, spacing, motion) in `src/lib/styles/tokens.css` — derived from DESIGN.md
+- Base typography + reset in `src/lib/styles/base.css`
+- Fonts self-hosted via `@fontsource-variable/fraunces` + `@fontsource/instrument-sans` + `@fontsource/jetbrains-mono`
+- Per-component scoped `<style>` blocks for page-specific layout
 
-## Conventions worth knowing
+## Conventions
 
-- Svelte 3 + `vitePreprocess` — `<script lang="ts">` works in `.svelte` files.
-- Prettier config: tabs, single quotes, no trailing commas, 100-char print width (`.prettierrc`).
-- ESLint extends `eslint:recommended` + TS + `eslint-plugin-svelte3` (`.eslintrc.cjs`).
-- Adding a new technology: drop the icon into `static/` and add a `<Technology>` line in `+page.svelte` with the matching `categories` array — the filter store wires everything else up automatically.
+- Svelte 5 runes (`$state`, `$derived`, `$props`, `$effect`). No legacy stores in new code.
+- mdsvex layouts assigned via frontmatter `layout: case_study` or `layout: essay`. The layout component receives every frontmatter field as a prop plus `children`.
+- `export const prerender = true` lives at the root `+layout.ts`; every public route emits static HTML at build.
+- Prettier: tabs, single quotes, no trailing commas, 100-char print width.
+- ESLint flat config (`eslint.config.js`).
+- Adding a case study: drop `src/routes/case-studies/<slug>/+page.svelte.md` with valid frontmatter. The index, sitemap, and OG cards pick it up automatically.
 
 ## Design System
 
