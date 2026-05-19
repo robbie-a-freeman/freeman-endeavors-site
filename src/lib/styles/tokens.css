@@ -79,9 +79,28 @@
 	--t-entry: 600ms;
 }
 
-@media (prefers-color-scheme: dark) {
-	:root[data-theme='auto'],
-	:root:not([data-theme]) {
-		/* Dark mode tokens defined here for V1.1 wiring. V1 ships light only. */
-	}
+/* Dark mode — DESIGN.md tokens. Activated by data-theme="dark" on <html>.
+ * The +layout.svelte applies the attribute pre-paint via app.html inline script. */
+:root[data-theme='dark'] {
+	color-scheme: dark;
+
+	--surface: #16161a;
+	--surface-2: #21211f;
+	--ink: #f0ebe2;
+	--ink-2: #d3cebf;
+	--muted: #8c8a82;
+
+	--forest: #6ea679;
+	--forest-2: #8ec096;
+
+	--brick: #c97551;
+	--brick-2: #d68f70;
+
+	--rule: #2d2c29;
+	--rule-strong: #44423d;
+
+	--success: #4ea366;
+	--warning: #d4a04a;
+	--error: #d66556;
+	--info: #5a82a8;
 }

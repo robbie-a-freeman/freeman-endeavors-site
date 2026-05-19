@@ -184,9 +184,9 @@
 
 				<p>
 					Code that ships includes tests, runbooks, and documentation aimed at the engineer who
-					will own it after we leave. That engineer is not us. Stewardship is one of our four
-					values; we treat the post-handoff readability of code as part of the deliverable, not
-					polish.
+					will own it after we leave. That engineer is not us. Collaboration is one of our four
+					values; we treat the post-handoff readability of code — and the knowledge transfer that
+					goes with it — as part of the deliverable, not polish.
 				</p>
 
 			<h4>Who it's for</h4>

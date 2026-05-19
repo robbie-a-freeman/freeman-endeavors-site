@@ -14,3 +14,6 @@ vite.config.ts.timestamp-*
 .netlify/
 /playwright-report
 /test-results
+
+# proprietary
+work-findings

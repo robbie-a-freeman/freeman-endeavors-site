@@ -19,7 +19,7 @@ export const SITE = {
  * Set CAL_LINK to the public event slug — e.g. `freemanendeavors/architecture-call`.
  * The /contact/ page renders the inline embed; every other CTA links to /contact/.
  */
-export const CAL_LINK = 'freemanendeavors/architecture-call';
+export const CAL_LINK = 'https://cal.com/robbie-freeman-7f0cpu';
 
 /**
  * Plausible analytics (T19). Custom event for the conversion funnel.

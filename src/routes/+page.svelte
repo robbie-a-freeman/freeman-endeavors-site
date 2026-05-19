@@ -112,9 +112,10 @@
 	<div class="how-grid">
 		<div class="how-body">
 			<p class="how-lede">
-				We're small on purpose. The principal is on every call, in every PR, and answerable for
-				every deliverable. Collaborators come in by name when their craft is what the job calls
-				for. Nothing gets handed to a junior you've never met.
+				You talk directly to the engineer doing the work. The principal is on every call, in
+				every PR, and answerable for every deliverable. We're a small, focused team of senior
+				consultants — collaborators come in by name when their craft is what the job calls for.
+				Nothing gets handed to a junior you've never met.
 			</p>
 			<p>
 				The audit comes back as a written document, not a slide deck. The fractional engagements
@@ -135,8 +136,7 @@
 			<SectionMarker number="04" label="Next step" />
 			<h2>If something here sounds like your problem, the call is free.</h2>
 			<p class="closing-body">
-				Forty-five minutes. We listen, we ask, we tell you what we'd do. If we're not the right
-				team, we'll say so and point you somewhere better.
+				Forty-five minutes. We listen, we ask, we tell you what we'd do.
 			</p>
 		</div>
 		<div class="closing-cta">

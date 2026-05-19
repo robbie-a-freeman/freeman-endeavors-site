@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { SITE, CTA } from '$lib/config';
+	import ThemeToggle from './ThemeToggle.svelte';
 
 	let drawerOpen = $state(false);
 
@@ -51,17 +52,21 @@
 				{/each}
 			</ul>
 			<a href={CTA.href} class="header-cta">{CTA.primaryShort}</a>
+			<ThemeToggle />
 		</nav>
 
-		<button
-			class="hamburger"
-			aria-label={drawerOpen ? 'Close menu' : 'Open menu'}
-			aria-expanded={drawerOpen}
-			aria-controls="mobile-drawer"
-			onclick={toggleDrawer}
-		>
-			<span aria-hidden="true">{drawerOpen ? '✕' : '≡'}</span>
-		</button>
+		<div class="mobile-controls">
+			<ThemeToggle />
+			<button
+				class="hamburger"
+				aria-label={drawerOpen ? 'Close menu' : 'Open menu'}
+				aria-expanded={drawerOpen}
+				aria-controls="mobile-drawer"
+				onclick={toggleDrawer}
+			>
+				<span aria-hidden="true">{drawerOpen ? '✕' : '≡'}</span>
+			</button>
+		</div>
 	</div>
 
 	{#if drawerOpen}
@@ -142,7 +147,7 @@
 		padding: 0;
 	}
 
-	.nav-desktop a {
+	.nav-desktop ul a {
 		font-family: var(--font-body);
 		font-weight: 500;
 		font-size: 0.9375rem;
@@ -153,29 +158,43 @@
 		transition: border-color var(--t-state) var(--ease);
 	}
 
-	.nav-desktop a:hover {
+	.nav-desktop ul a:hover {
 		border-bottom-color: var(--rule-strong);
 	}
 
-	.nav-desktop a.active {
+	.nav-desktop ul a.active {
 		border-bottom-color: var(--brick);
 	}
 
 	.header-cta {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
 		font-family: var(--font-body);
 		font-weight: 500;
 		font-size: 0.9375rem;
+		line-height: 1;
+		white-space: nowrap;
+		flex-shrink: 0;
 		background: var(--brick);
-		color: var(--surface) !important;
-		padding: 0.5rem 1rem;
+		color: var(--surface);
+		padding: 0.75rem 1.25rem;
 		border-radius: var(--r-sm);
-		text-decoration: none !important;
+		text-decoration: none;
+		border: 1px solid var(--brick);
 		transition: background-color var(--t-state) var(--ease);
 	}
 
 	.header-cta:hover {
 		background: var(--brick-2);
-		border-bottom-color: transparent !important;
+		border-color: var(--brick-2);
+		color: var(--surface);
+	}
+
+	.mobile-controls {
+		display: inline-flex;
+		align-items: center;
+		gap: var(--s-2);
 	}
 
 	.hamburger {
@@ -237,7 +256,7 @@
 			display: flex;
 		}
 
-		.hamburger {
+		.mobile-controls {
 			display: none;
 		}
 

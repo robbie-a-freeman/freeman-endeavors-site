@@ -14,15 +14,21 @@ Solutions architected to your business requirements. Whether you need AI in prod
 
 You'll always know what we've finished, what's coming next, and what we need from you to keep moving. We'd rather over-communicate progress than leave you guessing about your own project.
 
-### 4. Stewardship
+### 4. Collaboration
 
-Your ideas, time and money aren't ours to be careless with. We commit to building things that will still make sense two years from now.
+We work alongside your team, not around them. Engagements include knowledge transfer by default — we want your engineers to understand and own what we built, and we expect to learn from your business as much as we teach about ours.
 
 ---
 
 ## Considered
 
 Values and framings that were close to chosen, considered carefully, or kept on the table long enough to draft language for. Kept here in case a future pass wants to revisit.
+
+### Stewardship
+
+_Your ideas, time and money aren't ours to be careless with. We commit to building things that will still make sense two years from now._
+
+Held the #4 slot through most of the brainstorm before being replaced by Collaboration. Cut for sounding too corporate and de-emphasizing close collaboration — the word has stewardship-of-portfolio overtones that read cold to the SMB audience. The respect-for-resources commitment partially survives in Fit-to-purpose (right-sizing avoids overbuild) and Collaboration (knowledge transfer means clients aren't trapped), but the explicit long-horizon piece ("still make sense two years from now") is now unsaid. Worth reviving in stronger language if a future pass wants that commitment back.
 
 ### Growth
 
@@ -50,7 +56,7 @@ Alternate name proposed for the Fit-to-purpose slot. More distinctive than Pragm
 
 ### Long-term thinking
 
-A standalone value the user explicitly liked. Folded into Stewardship ("still make sense two years from now") to keep the set at four. Could be split back out if Stewardship feels overloaded.
+A standalone value the user explicitly liked. Was originally folded into Stewardship ("still make sense two years from now"), but Stewardship was subsequently cut — leaving the long-horizon commitment unstated in the locked four. Could revive as a fifth value or fold into a strengthened Fit-to-purpose if a future pass wants it back.
 
 ### Ownership / Personal accountability
 
@@ -60,7 +66,7 @@ The "one throat to choke, no junior handoffs" value. Close call — researcher's
 
 _You won't be in the dark about what we're building, why, or how it works. We work in diagrams and plain language, and we aim to leave you understanding your own system better than when we arrived._
 
-The predecessor to Communication. Originally framed around the **artifact** (you'll understand the system being built). Reframed to Communication when the user shifted the emphasis to **process** (you'll always know status). The artifact-clarity / client-teaching idea folded into Stewardship's "won't trap you" language.
+The predecessor to Communication. Originally framed around the **artifact** (you'll understand the system being built). Reframed to Communication when the user shifted the emphasis to **process** (you'll always know status). The artifact-clarity / client-teaching idea ultimately found its home in Collaboration ("we want your engineers to understand and own what we built").
 
 ### Speed / Agility
 

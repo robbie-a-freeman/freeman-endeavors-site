@@ -20,8 +20,8 @@
 		},
 		{
 			num: '04',
-			name: 'Stewardship',
-			body: 'Your ideas, time and money aren’t ours to be careless with. We commit to building things that will still make sense two years from now.'
+			name: 'Collaboration',
+			body: 'We work alongside your team, not around them. Engagements include knowledge transfer by default — we want your engineers to understand and own what we built, and we expect to learn from your business as much as we teach about ours.'
 		}
 	];
 </script>
