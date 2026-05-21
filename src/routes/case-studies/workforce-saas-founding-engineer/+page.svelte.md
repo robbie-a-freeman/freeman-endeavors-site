@@ -14,6 +14,9 @@ stack:
   - 'GitHub Actions + GCP Cloud Run'
 engagement: 'Fractional CTO → Architect + Implementation'
 duration: '24 months continuous'
+lenses:
+  - 'Data Layer'
+  - 'Architecture & Coordination'
 roi:
   - value: 'Multiple/day'
     label: 'Mobile release cadence after EAS pipeline rebuild'

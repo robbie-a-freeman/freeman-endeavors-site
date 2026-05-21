@@ -14,6 +14,9 @@ stack:
   - 'Cypress'
 engagement: 'Software Consultant'
 duration: '28 months and continuing'
+lenses:
+  - 'Cloud & Operations'
+  - 'Architecture & Coordination'
 roi:
   - value: '96 → 80'
     label: 'Vulnerabilities resolved in a single dependency sweep'

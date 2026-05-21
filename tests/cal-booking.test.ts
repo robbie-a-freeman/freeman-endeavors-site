@@ -2,7 +2,10 @@ import { expect, test } from '@playwright/test';
 
 test('contact page lazy-loads the Cal.com embed slot', async ({ page }) => {
 	await page.goto('/contact/');
-	await expect(page.locator('h1')).toContainText('Book');
+	// Scope to the page's own H1 — Cal.com's lazy-loaded embed adds its own H1
+	// once mounted (data-testid="event-title"), so a bare locator('h1') hits
+	// two elements under strict mode and fails on timing.
+	await expect(page.locator('main h1').first()).toContainText('Book');
 	await expect(page.locator('#cal-embed-slot')).toBeVisible();
 });
 

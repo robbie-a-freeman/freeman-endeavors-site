@@ -17,3 +17,4 @@ vite.config.ts.timestamp-*
 
 # proprietary
 work-findings
+.claude/worktrees/

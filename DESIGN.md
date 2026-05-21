@@ -42,7 +42,9 @@ All fonts loaded from Google Fonts; can self-host later if performance demands.
 
 ## Color
 
-Color is **ink, not paint**. Used where it does work. One accent (forest) for structural emphasis. One risk color (brick) for moments that need to move. Everything else is paper and ink.
+Color is **ink, not paint**. Used where it does work. One accent (forest) for primary CTAs and structural emphasis. One risk color (brick) for in-text emphasis pulls and ornamental section glyphs — used sparingly. Everything else is paper and ink.
+
+**WCAG AA contract.** Light-mode brick on light-mode surface measures 4.24:1, below AA's 4.5:1 threshold for normal text. Brick is therefore restricted to (a) display-scale emphasis (`<em>` in hero H1), which clears AA's 3:1 large-text bar, and (b) ornamental `§` glyphs nested inside parent text whose contrast already passes. Any action surface (button background, link arrow on a clickable target, mobile drawer active state) uses forest, not brick.
 
 ### Light mode
 
@@ -53,7 +55,7 @@ Color is **ink, not paint**. Used where it does work. One accent (forest) for st
 - **Muted:** `#6B6B66` — warm gray for captions, dates, footnotes
 - **Forest (accent):** `#1A4D2E` — headlines, links, primary visual emphasis
 - **Forest 2:** `#2D6A44` — hover states for forest elements
-- **Brick (risk accent):** `#B85C3C` — primary CTA button, in-text emphasis pulls. **Used sparingly.**
+- **Brick (risk accent):** `#B85C3C` — display-scale `<em>` emphasis, ornamental `§` glyphs. **Used sparingly.** Not used as an action color (see WCAG AA contract above).
 - **Brick 2:** `#A04C2E` — brick hover state
 - **Rule (hairlines):** `#D5CFC4`
 - **Rule strong:** `#B8B3A6` — borders that need to be noticeable
@@ -111,7 +113,7 @@ Redesigned surfaces, not inverted. Reduce saturation 10–15%.
 
 (Rendered in `/tmp/freeman-endeavors-design-preview.html` as live working examples. Cross-reference there.)
 
-- **Buttons:** Primary (brick fill, white text, 2 px radius), Ghost (1 px rule-strong border, ink text), Ink (ink fill, surface text). Hover: 1 px translate up + color shift.
+- **Buttons:** Primary (forest fill, surface text, 2 px radius), Ghost (1 px rule-strong border, ink text), Ink (ink fill, surface text). Hover: 1 px translate up + color shift (forest → forest-2 for primary).
 - **Inputs:** Surface fill, 1 px rule-strong border, 2 px radius, forest border on focus. Placeholder italic + muted.
 - **Cards:** 1 px rule border, no shadow, no fill. Hover: rule-strong border + 2 px translate up.
 - **Alerts:** Surface fill + 3 px left border in the semantic color. Mono icon glyph in the semantic color.

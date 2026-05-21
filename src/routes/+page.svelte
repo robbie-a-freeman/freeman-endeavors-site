@@ -24,21 +24,21 @@
 
 <Meta
 	title="Software consulting that ships"
-	description="Freeman Endeavors is a small software consultancy. We embed with SMB teams to ship the system they actually need — starting with a fixed-price architecture audit."
+	description="Software consulting for SMBs, opinionated about cloud architecture, the data layer, and scoping. Starts with a fixed-price architecture audit."
 />
 
 <svelte:head>
 	{@html `<script type="application/ld+json">${JSON.stringify(orgJsonLd)}</script>`}
 </svelte:head>
 
-<section class="hero container">
-	<div class="hero-grid">
-		<div class="hero-headline">
-			<p class="eyebrow caption">A software consultancy</p>
+<section class="hero">
+	<div class="container hero-grid">
+		<div class="hero-main">
+			<p class="hero-eyebrow"><span class="glyph">§</span> A SOFTWARE CONSULTANCY</p>
 			<h1>
-				We embed, we ship,<br />
-				and we tell you the truth<br />
-				about your software.
+				We can <em>be</em> your software team,<br />
+				or <em>boost</em> it.<br />
+				But we won't <em>block</em> it.
 			</h1>
 			<p class="lede">
 				Freeman Endeavors is a small consultancy that helps SMBs unstick the systems they already
@@ -47,18 +47,39 @@
 			</p>
 		</div>
 
-		<aside class="hero-intake">
-			<p class="caption">Start here</p>
-			<h2 class="intake-heading">
-				A 45-minute architecture call.<br />
-				No deck. No pitch.
-			</h2>
-			<p class="intake-body">
-				Tell us what's broken. We'll tell you, plainly, whether we're the right team for it — and
-				what an honest next step looks like.
-			</p>
-			<BookCallCTA size="large" />
-			<p class="intake-foot caption">Free · No prep required</p>
+		<aside class="hero-marginalia">
+			<p class="margin-byline"><em>— Our process</em></p>
+
+			<hr class="margin-rule" />
+
+			<div class="margin-item">
+				<p class="margin-label"><span class="num">§ 01</span> · INTAKE</p>
+				<p class="margin-body">A 45-minute architecture call. No deck, no pitch. Free.</p>
+			</div>
+
+			<hr class="margin-rule" />
+
+			<div class="margin-item">
+				<p class="margin-label"><span class="num">§ 02</span> · PROMISE</p>
+				<p class="margin-body">
+					A plain-spoken read on whether we're the right team. We say so if we're not.
+				</p>
+			</div>
+
+			<hr class="margin-rule" />
+
+			<div class="margin-item">
+				<p class="margin-label"><span class="num">§ 03</span> · PROOF</p>
+				<p class="margin-body">
+					Three anonymized engagements in our case studies. Real ROI, real teeth.
+				</p>
+			</div>
+
+			<hr class="margin-rule" />
+
+			<div class="margin-cta">
+				<BookCallCTA size="default" />
+			</div>
 		</aside>
 	</div>
 </section>
@@ -108,7 +129,65 @@
 </section>
 
 <section class="container section-block">
-	<SectionMarker number="03" label="How we work" as="h2" />
+	<SectionMarker number="03" label="What we're opinionated about" as="h2" />
+	<p class="opinions-lede">
+		Three places where SMB systems usually get the calls wrong. The audit reads your system
+		through these three lenses, and the deliverable names them out loud.
+	</p>
+
+	<div class="opinions-list">
+		<article class="opinion">
+			<p class="caption opinion-tag">
+				<span class="glyph">§</span> 03.A · CLOUD, SERVERLESS, AND VM FLEETS
+			</p>
+			<p class="opinion-body">
+				We've shipped all three: Lambda + API Gateway services running at scale, Kubernetes
+				footprints sized for a SaaS doing real revenue, and Linux-VM fleets where the right
+				answer was not to abstract the hardware. The serverless-versus-fleet decision is one
+				of the most expensive calls an SMB makes — and it's almost always made for the wrong
+				reason. We'll show you our reasoning.
+			</p>
+			<a href="/case-studies/vr-edtech-second-principal/" class="opinion-link">
+				See: a Kafka migration on AWS MSK →
+			</a>
+		</article>
+
+		<article class="opinion">
+			<p class="caption opinion-tag">
+				<span class="glyph">§</span> 03.B · THE DATA LAYER
+			</p>
+			<p class="opinion-body">
+				Postgres, GraphQL, and the joints between them. Most SMB systems are fine until year
+				three, when the schema decisions made at year one start charging interest — joins that
+				should have been denormalized, resolvers that hide an N+1, an index that everyone
+				forgot to add. We read your schema and your slowest queries before we read your
+				application code. If the data layer is wrong, nothing on top of it is going to hold up.
+			</p>
+			<a href="/case-studies/workforce-saas-founding-engineer/" class="opinion-link">
+				See: a multi-tenant data model built to survive a rewrite →
+			</a>
+		</article>
+
+		<article class="opinion">
+			<p class="caption opinion-tag">
+				<span class="glyph">§</span> 03.C · ARCHITECTURE, SCOPING, AND COORDINATION
+			</p>
+			<p class="opinion-body">
+				The hardest part of senior engineering is not writing code. It's deciding what to
+				build, in what order, with what team — and being honest about which parts of the work
+				you don't yet know enough to estimate. We've owned that work for our own engagements,
+				for client teams between leadership hires, and for the engineers who pick up the code
+				after we leave.
+			</p>
+			<a href="/case-studies/higher-ed-donation-page/" class="opinion-link">
+				See: six weeks to wrap an immovable CRM →
+			</a>
+		</article>
+	</div>
+</section>
+
+<section class="container section-block">
+	<SectionMarker number="04" label="How we work" as="h2" />
 	<div class="how-grid">
 		<div class="how-body">
 			<p class="how-lede">
@@ -133,7 +212,7 @@
 <section class="container section-block closing">
 	<div class="closing-grid">
 		<div>
-			<SectionMarker number="04" label="Next step" />
+			<SectionMarker number="05" label="Next step" />
 			<h2>If something here sounds like your problem, the call is free.</h2>
 			<p class="closing-body">
 				Forty-five minutes. We listen, we ask, we tell you what we'd do.
@@ -149,6 +228,12 @@
 	.hero {
 		padding-top: var(--s-9);
 		padding-bottom: var(--s-9);
+		background-image: radial-gradient(rgba(26, 26, 24, 0.06) 1px, transparent 1px);
+		background-size: 9px 9px;
+	}
+
+	:global([data-theme='dark']) .hero {
+		background-image: radial-gradient(rgba(240, 235, 226, 0.06) 1px, transparent 1px);
 	}
 
 	.hero-grid {
@@ -157,51 +242,93 @@
 		gap: var(--s-7);
 	}
 
-	.eyebrow {
-		margin: 0 0 var(--s-4) 0;
+	.hero-eyebrow {
+		font-family: var(--font-mono);
+		font-size: var(--fs-caption);
+		text-transform: uppercase;
+		letter-spacing: 0.14em;
+		color: var(--muted);
+		font-weight: 400;
+		margin: 0 0 var(--s-5) 0;
 	}
 
-	.hero-headline h1 {
-		font-size: clamp(2.5rem, 6vw, 4.5rem);
+	.hero-eyebrow .glyph {
+		color: var(--brick);
+		font-weight: 500;
+	}
+
+	.hero-main h1 {
+		font-size: clamp(2.5rem, 5.8vw, 4.75rem);
 		line-height: 1.04;
-		letter-spacing: -0.02em;
-		margin: 0 0 var(--s-5) 0;
+		letter-spacing: -0.022em;
+		margin: 0 0 var(--s-6) 0;
 		max-width: 18ch;
+		text-wrap: balance;
+	}
+
+	.hero-main h1 em {
+		font-style: italic;
+		color: var(--brick);
+		font-weight: 500;
 	}
 
 	.lede {
 		font-size: var(--fs-body-lg);
 		color: var(--ink-2);
+		line-height: 1.5;
 		max-width: 38ch;
 		margin: 0;
 	}
 
-	.hero-intake {
-		border: 1px solid var(--rule);
-		padding: var(--s-6);
-		background: var(--surface);
-		display: flex;
-		flex-direction: column;
-		gap: var(--s-4);
+	.hero-marginalia {
+		border-top: 1px solid var(--rule);
+		padding-top: var(--s-5);
 	}
 
-	.intake-heading {
-		font-size: 1.5rem;
-		line-height: 1.18;
-		margin: 0;
+	.margin-byline {
 		font-family: var(--font-display);
-		font-weight: 500;
-		letter-spacing: -0.01em;
-	}
-
-	.intake-body {
-		margin: 0;
-		color: var(--ink-2);
 		font-size: var(--fs-body);
+		color: var(--ink-2);
+		margin: 0 0 var(--s-4) 0;
 	}
 
-	.intake-foot {
+	.margin-byline em {
+		font-style: italic;
+	}
+
+	.margin-rule {
+		border: 0;
+		border-top: 1px solid var(--rule);
+		margin: var(--s-4) 0;
+	}
+
+	.margin-item {
 		margin: 0;
+	}
+
+	.margin-label {
+		font-family: var(--font-mono);
+		font-size: var(--fs-caption);
+		text-transform: uppercase;
+		letter-spacing: 0.12em;
+		color: var(--ink-2);
+		font-weight: 500;
+		margin: 0 0 var(--s-2) 0;
+	}
+
+	.margin-label .num {
+		color: var(--brick);
+	}
+
+	.margin-body {
+		font-size: var(--fs-body-sm);
+		color: var(--muted);
+		line-height: 1.5;
+		margin: 0;
+	}
+
+	.margin-cta {
+		padding-top: var(--s-3);
 	}
 
 	.section-block {
@@ -249,11 +376,64 @@
 	}
 
 	.tile-foot {
-		color: var(--brick);
+		color: var(--forest);
 	}
 
 	.band {
 		margin-top: var(--s-5);
+	}
+
+	.opinions-lede {
+		font-family: var(--font-display);
+		font-size: 1.375rem;
+		line-height: 1.35;
+		color: var(--ink-2);
+		max-width: 52ch;
+		margin: var(--s-3) 0 var(--s-7) 0;
+	}
+
+	.opinions-list {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 0;
+	}
+
+	.opinion {
+		padding: var(--s-6) 0;
+		border-top: 1px solid var(--rule);
+	}
+
+	.opinion:first-child {
+		border-top: 1px solid var(--rule-strong);
+	}
+
+	.opinion-tag {
+		margin: 0 0 var(--s-3) 0;
+	}
+
+	.opinion-tag .glyph {
+		color: var(--brick);
+	}
+
+	.opinion-body {
+		font-size: var(--fs-body-lg);
+		color: var(--ink);
+		max-width: 60ch;
+		margin: 0 0 var(--s-3) 0;
+		line-height: 1.55;
+	}
+
+	.opinion-link {
+		font-family: var(--font-mono);
+		font-size: var(--fs-caption);
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: var(--forest);
+		text-decoration: none;
+	}
+
+	.opinion-link:hover {
+		text-decoration: underline;
 	}
 
 	.how-grid {
@@ -299,9 +479,16 @@
 
 	@media (min-width: 720px) {
 		.hero-grid {
-			grid-template-columns: 7fr 5fr;
-			gap: var(--s-7);
-			align-items: end;
+			grid-template-columns: 2fr 1fr;
+			gap: var(--s-8);
+			align-items: start;
+		}
+
+		.hero-marginalia {
+			border-top: 0;
+			padding-top: 0;
+			border-left: 1px solid var(--rule);
+			padding-left: var(--s-6);
 		}
 
 		.services-grid {

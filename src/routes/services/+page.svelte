@@ -62,6 +62,30 @@
 					again, that's a successful audit by our definition.
 				</p>
 
+			<h4>What we look for</h4>
+			<p>
+				The audit reads your system through three lenses. We have opinions about each of them,
+				and the deliverable will name them out loud.
+			</p>
+			<ul class="look-for">
+				<li>
+					<strong>The cloud/fleet decision.</strong> Serverless makes sense for some workloads
+					and is a budget bomb for others. VM fleets are the right answer more often than the
+					industry admits. We'll tell you which one you have, with numbers.
+				</li>
+				<li>
+					<strong>The data layer's three-year horizon.</strong> Schemas, indexes, GraphQL
+					resolvers, and the queries that get slower under load. Most SMB systems are fine until
+					year three — we read your schema and your slowest queries before we read your
+					application code.
+				</li>
+				<li>
+					<strong>The roadmap items that have been "next quarter" for six quarters.</strong>
+					There is always a reason. We tell you whether the reason is technical or
+					organizational, and which of the two is actually cheaper to fix.
+				</li>
+			</ul>
+
 			<h4>Who it's for</h4>
 			<p>
 				Founders and CTOs at small-and-mid-sized businesses where the engineering function has
@@ -299,6 +323,24 @@
 	.service-body :global(h4) {
 		margin-top: var(--s-6);
 		margin-bottom: var(--s-2);
+	}
+
+	.service-body :global(.look-for) {
+		list-style: none;
+		padding: 0;
+		margin: var(--s-4) 0 0 0;
+		display: grid;
+		gap: var(--s-4);
+	}
+
+	.service-body :global(.look-for li) {
+		padding-left: var(--s-4);
+		border-left: 2px solid var(--rule);
+	}
+
+	.service-body :global(.look-for strong) {
+		color: var(--ink);
+		font-weight: 500;
 	}
 
 	.service-aside {

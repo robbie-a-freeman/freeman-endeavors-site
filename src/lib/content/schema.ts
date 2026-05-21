@@ -9,6 +9,10 @@ const isoDate = z.string().refine((v) => !Number.isNaN(Date.parse(v)), {
 	message: 'must be an ISO date string'
 });
 
+export const LENSES = ['Cloud & Operations', 'Data Layer', 'Architecture & Coordination'] as const;
+export const lensEnum = z.enum(LENSES);
+export type Lens = z.infer<typeof lensEnum>;
+
 export const caseStudyFrontmatter = z.object({
 	title: z.string().min(1),
 	description: z.string().min(1).max(160),
@@ -19,6 +23,7 @@ export const caseStudyFrontmatter = z.object({
 	stack: z.array(z.string()).optional(),
 	engagement: z.string().optional(),
 	duration: z.string().optional(),
+	lenses: z.array(lensEnum).optional(),
 	roi: z
 		.array(
 			z.object({

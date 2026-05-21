@@ -12,6 +12,8 @@ stack:
   - 'Stripe (via iframe)'
 engagement: 'Fixed-scope build'
 duration: '6 weeks'
+lenses:
+  - 'Architecture & Coordination'
 roi:
   - value: '13×'
     label: 'Hero image weight reduction before launch (22 MB → 1.7 MB)'

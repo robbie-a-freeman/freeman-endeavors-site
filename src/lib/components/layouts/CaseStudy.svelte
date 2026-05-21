@@ -16,6 +16,7 @@
 		stack,
 		engagement,
 		duration,
+		lenses,
 		roi,
 		children
 	} = $props<{
@@ -28,6 +29,7 @@
 		stack?: string[];
 		engagement?: string;
 		duration?: string;
+		lenses?: string[];
 		roi?: Array<{ value: string; label: string }>;
 		children: () => unknown;
 	}>();
@@ -52,6 +54,7 @@
 			{stack}
 			{engagement}
 			{duration}
+			{lenses}
 		/>
 	</header>
 

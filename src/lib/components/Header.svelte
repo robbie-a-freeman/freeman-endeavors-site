@@ -176,18 +176,18 @@
 		line-height: 1;
 		white-space: nowrap;
 		flex-shrink: 0;
-		background: var(--brick);
+		background: var(--forest);
 		color: var(--surface);
 		padding: 0.75rem 1.25rem;
 		border-radius: var(--r-sm);
 		text-decoration: none;
-		border: 1px solid var(--brick);
+		border: 1px solid var(--forest);
 		transition: background-color var(--t-state) var(--ease);
 	}
 
 	.header-cta:hover {
-		background: var(--brick-2);
-		border-color: var(--brick-2);
+		background: var(--forest-2);
+		border-color: var(--forest-2);
 		color: var(--surface);
 	}
 
@@ -237,14 +237,14 @@
 	}
 
 	.drawer a.active {
-		color: var(--brick);
+		color: var(--forest);
 	}
 
 	.drawer-cta {
 		display: inline-block;
 		font-family: var(--font-body) !important;
 		font-size: 1rem !important;
-		background: var(--brick);
+		background: var(--forest);
 		color: var(--surface) !important;
 		padding: 0.875rem 1.25rem;
 		border-radius: var(--r-sm);

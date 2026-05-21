@@ -4,6 +4,7 @@
 		title: string;
 		description: string;
 		published: string;
+		lenses?: string[];
 	}
 
 	interface Props {
@@ -31,6 +32,13 @@
 					<span class="row-date caption">{dateFmt.format(new Date(item.published))}</span>
 					<span class="row-title">{item.title}</span>
 					<span class="row-dek">{item.description}</span>
+					{#if item.lenses && item.lenses.length > 0}
+						<span class="row-lenses">
+							{#each item.lenses as lens}
+								<span class="lens-tag">{lens}</span>
+							{/each}
+						</span>
+					{/if}
 				</a>
 			</li>
 		{/each}
@@ -85,6 +93,24 @@
 		line-clamp: 2;
 		-webkit-box-orient: vertical;
 		overflow: hidden;
+	}
+
+	.row-lenses {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--s-2);
+		margin-top: var(--s-2);
+	}
+
+	.lens-tag {
+		font-family: var(--font-mono);
+		font-size: var(--fs-caption);
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: var(--ink-2);
+		border: 1px solid var(--rule);
+		padding: 2px var(--s-2);
+		white-space: nowrap;
 	}
 
 	.empty {

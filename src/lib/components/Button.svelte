@@ -73,14 +73,14 @@
 	}
 
 	.btn-primary {
-		background: var(--brick);
+		background: var(--forest);
 		color: var(--surface);
-		border-color: var(--brick);
+		border-color: var(--forest);
 	}
 
 	.btn-primary:hover {
-		background: var(--brick-2);
-		border-color: var(--brick-2);
+		background: var(--forest-2);
+		border-color: var(--forest-2);
 		color: var(--surface);
 	}
 

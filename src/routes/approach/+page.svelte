@@ -97,10 +97,13 @@
 	<div class="prose narrow-prose">
 		<p>
 			The principal is Robbie Freeman. Eighteen years of building software, the last eight focused
-			on the systems SMBs depend on. Equally comfortable with a Rails 4 codebase that needs to be
-			a Rails 7 codebase and with a fresh Next.js project that needs to ship by Q3. The systems
-			he's written run today inside healthcare-adjacent and fintech-adjacent businesses across
-			multiple states.
+			on the systems SMBs depend on. The work tends to fall into three lanes that overlap more
+			than people expect: <strong>cloud architecture</strong> — serverless, VM fleets, and the
+			decision between them; <strong>the data layer</strong> — Postgres, GraphQL, and schemas
+			designed to survive year three; and <strong>scoping and coordination</strong> — the parts
+			of senior engineering that aren't writing code. The codebases he's owned range from Rails
+			monoliths older than some of the engineers using them to serverless TypeScript shipped this
+			quarter. The systems run today inside healthcare-adjacent and fintech-adjacent SMBs.
 		</p>
 		<p>
 			The bench is a small set of senior engineers Freeman Endeavors works with by name, brought

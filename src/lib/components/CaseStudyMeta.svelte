@@ -5,9 +5,10 @@
 		stack?: string[];
 		engagement?: string;
 		duration?: string;
+		lenses?: string[];
 	}
 
-	const { client, industry, stack, engagement, duration }: Props = $props();
+	const { client, industry, stack, engagement, duration, lenses }: Props = $props();
 </script>
 
 <dl class="meta">
@@ -39,6 +40,16 @@
 			<dd>{duration}</dd>
 		</div>
 	{/if}
+	{#if lenses && lenses.length > 0}
+		<div class="row lenses-row">
+			<dt class="caption">Lenses</dt>
+			<dd class="lenses">
+				{#each lenses as lens}
+					<span class="lens-tag">{lens}</span>
+				{/each}
+			</dd>
+		</div>
+	{/if}
 </dl>
 
 <style>
@@ -68,6 +79,23 @@
 		font-size: var(--fs-body);
 	}
 
+	.lenses {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--s-2);
+	}
+
+	.lens-tag {
+		font-family: var(--font-mono);
+		font-size: var(--fs-caption);
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: var(--ink-2);
+		border: 1px solid var(--rule);
+		padding: 2px var(--s-2);
+		white-space: nowrap;
+	}
+
 	@media (min-width: 720px) {
 		.meta {
 			grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -76,6 +104,10 @@
 
 		.row {
 			gap: var(--s-2);
+		}
+
+		.lenses-row {
+			grid-column: 1 / -1;
 		}
 	}
 </style>
