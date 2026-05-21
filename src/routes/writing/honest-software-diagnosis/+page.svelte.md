@@ -2,13 +2,13 @@
 layout: essay
 title: 'What an honest software diagnosis looks like'
 description: 'When a consultancy says you need a rewrite, it usually wants the work. The cheaper alternative is a diagnosis — fixed-price, willing to talk you out of it.'
-dek: 'Why we built the audit, what it actually delivers, and the diagnosis it makes that most rewrites avoid.'
+dek: 'Why we built the survey, what it actually delivers, and the diagnosis it makes that most rewrites avoid.'
 published: '2026-05-12'
 ---
 
 The first time we sat in a room with a CEO who'd been told three different things by three different consultancies about what was wrong with his software, I noticed something the meeting was not about. Two of the firms had told him to rewrite. The third had told him to migrate to their preferred platform. None of them had told him what was actually wrong.
 
-This is the gap the audit is for. Not because nobody has ever offered a software audit before — the format has been around for as long as people have charged money to write software for other people. But because the version of it that gets sold to small-and-mid-sized businesses today is, almost always, the wrong shape. It is too long. It is too marketing-coded. It is too obviously trying to lead somewhere — usually toward the firm's flagship six-month engagement. And it almost never makes the call most clients actually need somebody to make for them, which is the call to *not* do the obvious next project.
+This is the gap the survey is for. We call ours a survey, not an audit, on purpose. Audit is the industry term, and the industry version of it — the format that gets sold to small-and-mid-sized businesses today — is, almost always, the wrong shape. It is too long. It is too marketing-coded. It is too obviously trying to lead somewhere — usually toward the firm's flagship six-month engagement. And it almost never makes the call most clients actually need somebody to make for them, which is the call to *not* do the obvious next project.
 
 This piece is about why we built ours the way we did, what it actually delivers, and the diagnosis it ends up making that most software audits — and most rewrites — quietly avoid.
 
@@ -22,17 +22,17 @@ I am not saying this is dishonest. The engineers running discovery in firms like
 
 ## What we wanted instead
 
-The audit was the first artifact we built when we put Freeman Endeavors on its current footing as a firm. We wanted three things.
+The survey was the first artifact we built when we put Freeman Endeavors on its current footing as a firm. We wanted three things.
 
-First, **the audit had to be a deliverable on its own**, not a phase of a larger engagement. A client who only ever buys the audit and never works with us again has — by our definition — bought a successful audit. Anything else makes the audit's recommendations dishonest by construction.
+First, **the survey had to be a deliverable on its own**, not a phase of a larger engagement. A client who only ever buys the survey and never works with us again has — by our definition — bought a successful survey. Anything else makes the survey's recommendations dishonest by construction.
 
 Second, **it had to be fixed-fee**. T&M discovery is a fundamentally different motion. Fixed-fee work forces the firm to make a call about scope before the work starts, and it gives the client a number they can decide on without having to estimate how long someone they don't know will take to do something they can't see.
 
-Third, **it had to be allowed to say no**. Half of the audits we'd write across our careers had ended in a recommendation that was, essentially, "what you have is fine — fix the team, not the code." That recommendation is the most expensive recommendation for an incumbent firm to make and the most valuable recommendation for a client to receive. We wanted a format where that was the cleanest answer to land on, not the most awkward.
+Third, **it had to be allowed to say no**. Half of the audits we'd written across our careers had ended in a recommendation that was, essentially, "what you have is fine — fix the team, not the code." That recommendation is the most expensive recommendation for an incumbent firm to make and the most valuable recommendation for a client to receive. We wanted a format where that was the cleanest answer to land on, not the most awkward.
 
 ## What it actually delivers
 
-The audit is two weeks of calendar time and a fixed fee. What you get at the end is a written document — typically four to six thousand words — and a ninety-minute walkthrough call with whoever from your team needs to be in the room. The document is structured the way a senior engineer would write a report to a peer they respected. Findings, evidence, recommendations. No marketing layer.
+The survey is two weeks of calendar time and a fixed fee. What you get at the end is a written document — typically four to six thousand words — and a ninety-minute walkthrough call with whoever from your team needs to be in the room. The document is structured the way a senior engineer would write a report to a peer they respected. Findings, evidence, recommendations. No marketing layer.
 
 The document covers the data model, the deploy story, the critical-path workflows that actually keep the business running, and the team-and-code relationship. That last one matters more than most clients expect it to. We have seen four-million-dollar rewrites recommended on the basis of code that, on inspection, was fine — the team had stopped trusting it, and a team that doesn't trust its code interprets every problem as evidence that the code needs to be replaced.
 
@@ -48,18 +48,18 @@ We have made this diagnosis to a CEO three weeks from signing a fourteen-month r
 
 Rewrites have a strange psychology around them. They feel like the brave choice. They feel like the decision a serious operator makes when faced with serious technical debt. They feel like the conversation you have when you are tired of incremental fixes that never seem to add up to anything. The truth is closer to the opposite. A rewrite is, almost always, the easiest decision to make and the hardest decision to be right about. The harder decision — the one that requires actually understanding the system before you replace it — is to figure out which parts you keep, which parts you fix, and which parts you leave alone.
 
-That is the call the audit exists to make. We don't always land on "don't rewrite." Sometimes the right answer is a rewrite of a specific subsystem, scoped tightly, behind a feature flag, with a defined exit condition. Sometimes the right answer is a fractional engagement to hold the engineering seat while a new tech lead is hired. Sometimes the right answer is the modernization project the client asked for in the first place, with a slightly different sequence. The audit's job is not to default to any of these. The audit's job is to look at the actual system and tell the actual truth.
+That is the call the survey exists to make. We don't always land on "don't rewrite." Sometimes the right answer is a rewrite of a specific subsystem, scoped tightly, behind a feature flag, with a defined exit condition. Sometimes the right answer is a fractional engagement to hold the engineering seat while a new tech lead is hired. Sometimes the right answer is the modernization project the client asked for in the first place, with a slightly different sequence. The survey's job is not to default to any of these. The survey's job is to look at the actual system and tell the actual truth.
 
 ## What this costs you, and what it costs us
 
-The audit is twelve thousand dollars. We picked the number deliberately. It is high enough to be a real commitment that signals a real diagnosis is being produced. It is low enough that it is approvable inside an SMB without going to a board. It is small relative to the next engagement — the modernization or fractional retainer — that the audit might or might not recommend, which keeps the incentive aligned with whatever the audit actually concludes.
+The survey is twelve thousand dollars. We picked the number deliberately. It is high enough to be a real commitment that signals a real diagnosis is being produced. It is low enough that it is approvable inside an SMB without going to a board. It is small relative to the next engagement — the modernization or fractional retainer — that the survey might or might not recommend, which keeps the incentive aligned with whatever the survey actually concludes.
 
-It costs us, on average, more than the fee. We do not break even on a typical audit. We do break even on a typical client. We can do this because we are small and because our overhead is the engineering team and the writing time, not a sales pipeline and an office.
+It costs us, on average, more than the fee. We do not break even on a typical survey. We do break even on a typical client. We can do this because we are small and because our overhead is the engineering team and the writing time, not a sales pipeline and an office.
 
-That is, candidly, the part that makes this format unworkable for most consultancies. If you have a sales team and an account-management layer and an office and a partner track, the audit has to either be priced much higher — at which point it stops being the easy first step — or it has to be a loss-leader for an engagement that's already been decided. Neither of those produces the diagnosis we wanted to be in the business of making.
+That is, candidly, the part that makes this format unworkable for most consultancies. If you have a sales team and an account-management layer and an office and a partner track, the survey has to either be priced much higher — at which point it stops being the easy first step — or it has to be a loss-leader for an engagement that's already been decided. Neither of those produces the diagnosis we wanted to be in the business of making.
 
 ## What we'd like you to take from this
 
 If you are sitting on a feeling that something is wrong with your system, and the advice you have been getting is either expensive or evasive, an honest diagnosis is a thing that can exist. It is not the standard format. It is not the most profitable format. It is, in our read, the right format for SMBs whose systems are real and load-bearing and worth understanding rather than replacing.
 
-If you'd like to talk about whether the audit makes sense for what you're facing, the [forty-five-minute call](/contact/) is free. We'll listen. We'll ask. If we're not the right firm for it, we'll say so and point you somewhere better.
+If you'd like to talk about whether the survey makes sense for what you're facing, the [forty-five-minute call](/contact/) is free. We'll listen. We'll ask. If we're not the right firm for it, we'll say so and point you somewhere better.

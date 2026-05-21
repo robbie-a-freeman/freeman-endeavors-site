@@ -20,7 +20,7 @@
 		</h1>
 
 		<p class="lede">
-			A small software consultancy. We start with a fixed-price architecture audit and
+			A small software consultancy. We start with a fixed-price architecture survey and
 			grow from there. We say so when we're not the right team.
 		</p>
 

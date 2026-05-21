@@ -25,7 +25,7 @@ Routes live under `src/routes/`, components under `src/lib/components/`. mdsvex 
 
 **Routes**
 - `/` — homepage with asymmetric editorial hero
-- `/services/` — three anchored sections (#audit / #fractional / #modernization)
+- `/services/` — three anchored sections (#survey / #fractional / #modernization)
 - `/case-studies/` — index listing; each `<slug>/+page.svelte.md` is one anonymized engagement
 - `/approach/` — values + methodology + team
 - `/contact/` — Cal.com inline embed (lazy-loaded via IntersectionObserver) with mailto fallback
@@ -50,7 +50,7 @@ Routes live under `src/routes/`, components under `src/lib/components/`. mdsvex 
 - `loaders.ts` — `loadCaseStudies()`, `loadEssays()` — typed glob loaders, empty-array fallback
 - `scripts/validate-content.ts` — prebuild step that validates every frontmatter file against the Zod schemas
 
-**Site config (`src/lib/config.ts`)** — site URL, Cal.com slug, Plausible event name, audit price. Single source of truth for cross-cutting constants.
+**Site config (`src/lib/config.ts`)** — site URL, Cal.com slug, Plausible event name, survey price. Single source of truth for cross-cutting constants.
 
 **Styling**
 - Tokens (color, type, spacing, motion) in `src/lib/styles/tokens.css` — derived from DESIGN.md

@@ -13,7 +13,7 @@
 
 <Meta
 	title="Case studies"
-	description="Anonymized engagements: modernization, fractional leadership, audit-to-roadmap. Real systems, real outcomes, no marketing varnish."
+	description="Anonymized engagements: modernization, fractional leadership, survey-to-roadmap. Real systems, real outcomes, no marketing varnish."
 />
 
 <header class="page-header container">

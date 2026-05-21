@@ -2,7 +2,7 @@
 	import Meta from '$lib/components/Meta.svelte';
 	import BookCallCTA from '$lib/components/BookCallCTA.svelte';
 	import SectionMarker from '$lib/components/SectionMarker.svelte';
-	import { AUDIT_PRICE_USD, AUDIT_DURATION } from '$lib/config';
+	import { SURVEY_PRICE_USD, SURVEY_DURATION } from '$lib/config';
 
 	const priceFmt = new Intl.NumberFormat('en-US', {
 		style: 'currency',
@@ -13,35 +13,35 @@
 
 <Meta
 	title="Services"
-	description="Architecture audits, fractional engineering leadership, and legacy modernization for SMBs. Fixed-price entry, plain-English deliverables, no junior handoffs."
+	description="Architecture surveys, fractional engineering leadership, and legacy modernization for SMBs. Fixed-price entry, plain-English deliverables, no junior handoffs."
 />
 
 <header class="page-header container">
-	<p class="caption">What we do</p>
+	<p class="caption">What we offer</p>
 	<h1>Three ways to work with us.</h1>
 	<p class="lede">
-		The audit is the front door — a fixed-price, two-week read that lets you see how we work before
+		The survey is the front door — a fixed-price, two-week read that lets you see how we work before
 		you commit to anything bigger. Fractional and modernization are how we keep going after the
-		audit, if you want us to.
+		survey, if you want us to.
 	</p>
 </header>
 
 <nav class="toc container" aria-label="On this page">
 	<ul>
-		<li><a href="#audit"><span class="glyph">§</span> 01 · Architecture Audit</a></li>
+		<li><a href="#survey"><span class="glyph">§</span> 01 · Architecture Survey</a></li>
 		<li><a href="#fractional"><span class="glyph">§</span> 02 · Fractional Leadership</a></li>
 		<li><a href="#modernization"><span class="glyph">§</span> 03 · Modernization</a></li>
 	</ul>
 </nav>
 
-<section id="audit" class="service container">
-	<SectionMarker number="01" label="Architecture Audit" as="h2" />
+<section id="survey" class="service container">
+	<SectionMarker number="01" label="Architecture Survey" as="h2" />
 	<h3 class="service-title">A written read of your system, in two weeks, for a flat fee.</h3>
 
 	<div class="service-grid">
 		<div class="service-body prose">
 			<p>
-				The audit is what we do when you know something's off and you want a second pair of eyes
+				The survey is what we do when you know something's off and you want a second pair of eyes
 				before you spend real money on a fix. It is a fixed-price engagement: we read your code,
 				your data model, your deploy story, and the three or four critical paths that keep your
 				business running, and we hand you a written document that says — plainly — where the system
@@ -57,14 +57,14 @@
 			</p>
 
 				<p>
-					The deliverables stay yours. Nothing about the audit is locked to working with us
+					The deliverables stay yours. Nothing about the survey is locked to working with us
 					afterward. If you take our document, hand it to your existing team, and never call us
-					again, that's a successful audit by our definition.
+					again, that's a successful survey by our definition.
 				</p>
 
 			<h4>What we look for</h4>
 			<p>
-				The audit reads your system through three lenses. We have opinions about each of them,
+				The survey reads your system through three lenses. We have opinions about each of them,
 				and the deliverable will name them out loud.
 			</p>
 			<ul class="look-for">
@@ -96,8 +96,8 @@
 
 			<h4>What it's not</h4>
 			<p>
-				The audit is not a code review of every file. It's not a security pentest. It's not the
-				fix — we won't ship a single line of production code as part of the audit itself, and we
+				The survey is not a code review of every file. It's not a security pentest. It's not the
+				fix — we won't ship a single line of production code as part of the survey itself, and we
 				won't write the tests you need. Those are separate engagements, and we'll tell you which
 				ones we think you actually need.
 			</p>
@@ -106,15 +106,15 @@
 		<aside class="service-aside">
 			<div class="pricebox">
 				<p class="caption">Fee</p>
-				<p class="price">{priceFmt.format(AUDIT_PRICE_USD)}</p>
+				<p class="price">{priceFmt.format(SURVEY_PRICE_USD)}</p>
 				<p class="caption">Calendar time</p>
-				<p class="meta">{AUDIT_DURATION}</p>
+				<p class="meta">{SURVEY_DURATION}</p>
 				<p class="caption">Deliverable</p>
 				<p class="meta">Written read + 90-min walkthrough + recommendations doc</p>
 			</div>
 			<div class="cta-block">
 				<BookCallCTA size="large" />
-				<p class="caption foot">First, a free 45-minute call. The audit is the next step after.</p>
+				<p class="caption foot">First, a free 45-minute call. The survey is the next step after.</p>
 			</div>
 		</aside>
 	</div>
@@ -225,7 +225,7 @@
 			<h4>What it's not</h4>
 			<p>
 				It is not a rewrite-from-scratch. We do not believe in rewriting your system from a blank
-				editor. If our read of the codebase points to that conclusion, the audit would have said
+				editor. If our read of the codebase points to that conclusion, the survey would have said
 				so first, and we'd point you at a different team. The right team for a true greenfield
 				rebuild is usually not the right team for a careful modernization, and vice versa.
 			</p>
@@ -238,12 +238,12 @@
 				<p class="caption">Typical duration</p>
 				<p class="meta">2–6 months</p>
 				<p class="caption">Often follows</p>
-				<p class="meta">An Architecture Audit</p>
+				<p class="meta">An Architecture Survey</p>
 			</div>
 			<div class="cta-block">
 				<BookCallCTA size="large" />
 				<p class="caption foot">
-					Scope and price are project-specific. The audit is the cleanest path to a real estimate.
+					Scope and price are project-specific. The survey is the cleanest path to a real estimate.
 				</p>
 			</div>
 		</aside>

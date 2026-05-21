@@ -2,8 +2,7 @@
 	import Meta from '$lib/components/Meta.svelte';
 	import BookCallCTA from '$lib/components/BookCallCTA.svelte';
 	import SectionMarker from '$lib/components/SectionMarker.svelte';
-	import StatBlock from '$lib/components/StatBlock.svelte';
-	import { SITE, AUDIT_PRICE_USD } from '$lib/config';
+	import { SITE, SURVEY_PRICE_USD } from '$lib/config';
 
 	const priceFmt = new Intl.NumberFormat('en-US', {
 		style: 'currency',
@@ -24,7 +23,7 @@
 
 <Meta
 	title="Software consulting that ships"
-	description="Software consulting for SMBs, opinionated about cloud architecture, the data layer, and scoping. Starts with a fixed-price architecture audit."
+	description="Software consulting for SMBs, opinionated about cloud architecture, the data layer, and scoping. Starts with a fixed-price architecture survey."
 />
 
 <svelte:head>
@@ -36,42 +35,56 @@
 		<div class="hero-main">
 			<p class="hero-eyebrow"><span class="glyph">§</span> A SOFTWARE CONSULTANCY</p>
 			<h1>
-				We can <em>be</em> your software team,<br />
-				or <em>boost</em> it.<br />
-				But we won't <em>block</em> it.
+				We can guide you through your software endeavors.
 			</h1>
 			<p class="lede">
-				Freeman Endeavors is a small consultancy that helps SMBs unstick the systems they already
-				depend on. We start with a fixed-price architecture audit and grow from there — fractional
-				leadership, modernization work, or nothing at all if nothing is what's right.
+				Meet Freeman Endeavors: we help SMBs build, ship, and maintain distributed cloud systems you can
+				depend on.
+			</p>
+			<br />
+			<p class="lede">
+				Whether you're trying to build, scale, automate, or modernize, we're here to help.
 			</p>
 		</div>
 
 		<aside class="hero-marginalia">
-			<p class="margin-byline"><em>— Our process</em></p>
+			<p class="margin-byline"><em>Our Process</em></p>
 
 			<hr class="margin-rule" />
 
 			<div class="margin-item">
-				<p class="margin-label"><span class="num">§ 01</span> · INTAKE</p>
-				<p class="margin-body">A 45-minute architecture call. No deck, no pitch. Free.</p>
+				<p class="margin-label"><span class="num">§ 01</span> · DISCOVERY</p>
+				<p class="margin-body">A free 45-minute discovery call focused on your architectural
+				requirements. Tell us what your situation is and we'll assess how we can help.</p>
 			</div>
 
 			<hr class="margin-rule" />
 
 			<div class="margin-item">
-				<p class="margin-label"><span class="num">§ 02</span> · PROMISE</p>
+				<p class="margin-label"><span class="num">§ 02</span> · PROPOSAL</p>
 				<p class="margin-body">
-					A plain-spoken read on whether we're the right team. We say so if we're not.
+					We propose a plan with clear timelines, budget, and deliverables.
+					Usually this is a focused, deep survey of your technical landscape.
 				</p>
 			</div>
 
 			<hr class="margin-rule" />
 
 			<div class="margin-item">
-				<p class="margin-label"><span class="num">§ 03</span> · PROOF</p>
+				<p class="margin-label"><span class="num">§ 03</span> · SURVEY</p>
 				<p class="margin-body">
-					Three anonymized engagements in our case studies. Real ROI, real teeth.
+					We execute the agreed-upon plan and communicate with you
+					throughout the process. After it's concluded, we'll discuss the findings.
+				</p>
+			</div>
+
+			<hr class="margin-rule" />
+
+			<div class="margin-item">
+				<p class="margin-label"><span class="num">§ 04</span> · SUPPORT</p>
+				<p class="margin-body">
+					We're not about the survey-and-dash life. We want to work with clients that
+					we can support for the long haul.
 				</p>
 			</div>
 
@@ -85,15 +98,15 @@
 </section>
 
 <section class="container section-block">
-	<SectionMarker number="01" label="What we do" as="h2" />
+	<SectionMarker number="01" label="What we offer" as="h2" />
 	<div class="services-grid">
-		<a href="/services/#audit" class="service-tile">
-			<h3>Architecture Audit</h3>
+		<a href="/services/#survey" class="service-tile">
+			<h3>Architecture Survey</h3>
 			<p>
 				A two-week, fixed-price read of your system. Where it's brittle, what to fix first, what to
-				ignore. Fee published below.
+				ignore.
 			</p>
-			<span class="caption tile-foot">{priceFmt.format(AUDIT_PRICE_USD)} · {`~`}2 weeks →</span>
+			<span class="caption tile-foot">Fixed-price · {`~`}2-4 weeks →</span>
 		</a>
 		<a href="/services/#fractional" class="service-tile">
 			<h3>Fractional Engineering Leadership</h3>
@@ -115,25 +128,55 @@
 </section>
 
 <section class="container section-block">
-	<SectionMarker number="02" label="What you can expect" as="h2" />
-	<div class="band">
-		<StatBlock
-			contained
-			stats={[
-				{ value: '45 min', label: 'Time from first call to a usable read on your system' },
-				{ value: '~2 weeks', label: 'Calendar time for a fixed-price audit' },
-				{ value: '1', label: 'Principal you actually talk to, start to finish' }
-			]}
-		/>
-	</div>
+	<SectionMarker number="02" label="What kinds of problems do we solve for you?" as="h2" />
+	<ol class="entries">
+		<li class="entry">
+			<header class="entry-head">
+				<p class="entry-tag"><span class="glyph">§</span> 02 · A</p>
+				<p class="entry-eyebrow">Scaling under load</p>
+			</header>
+			<div class="entry-body">
+				<h3 class="entry-headline">
+					Trying to scale up for <em>more users</em>?
+				</h3>
+				<p class="entry-para">
+					We can transition your systems to dynamically scaling architectures to handle traffic
+					whenever it comes.
+				</p>
+			</div>
+		</li>
+		<li class="entry">
+			<header class="entry-head">
+				<p class="entry-tag"><span class="glyph">§</span> 02 · B</p>
+				<p class="entry-eyebrow">Compliance</p>
+			</header>
+			<div class="entry-body">
+				<h3 class="entry-headline">
+					Automating mission-critical processes while <em>maintaining compliance</em>?
+				</h3>
+				<p class="entry-para">
+					Your systems should honor the agreements you make with your clients. We can ensure
+					that.
+				</p>
+			</div>
+		</li>
+		<li class="entry">
+			<header class="entry-head">
+				<p class="entry-tag"><span class="glyph">§</span> 02 · C</p>
+				<p class="entry-eyebrow">Distributed systems</p>
+			</header>
+			<div class="entry-body">
+				<h3 class="entry-headline">
+					Battling <em>race conditions</em> with your microservices?
+				</h3>
+				<p class="entry-para">We will run the race and beat them. Ready, set, go! 🏃💨</p>
+			</div>
+		</li>
+	</ol>
 </section>
 
 <section class="container section-block">
-	<SectionMarker number="03" label="What we're opinionated about" as="h2" />
-	<p class="opinions-lede">
-		Three places where SMB systems usually get the calls wrong. The audit reads your system
-		through these three lenses, and the deliverable names them out loud.
-	</p>
+	<SectionMarker number="03" label="Our expertise" as="h2" />
 
 	<div class="opinions-list">
 		<article class="opinion">
@@ -143,9 +186,9 @@
 			<p class="opinion-body">
 				We've shipped all three: Lambda + API Gateway services running at scale, Kubernetes
 				footprints sized for a SaaS doing real revenue, and Linux-VM fleets where the right
-				answer was not to abstract the hardware. The serverless-versus-fleet decision is one
-				of the most expensive calls an SMB makes — and it's almost always made for the wrong
-				reason. We'll show you our reasoning.
+				answer was not to abstract the hardware. Maintaining software at an enterprise scale
+				while keeping costs down is attainable through good decisionmaking and sound
+				development processes.
 			</p>
 			<a href="/case-studies/vr-edtech-second-principal/" class="opinion-link">
 				See: a Kafka migration on AWS MSK →
@@ -187,36 +230,10 @@
 </section>
 
 <section class="container section-block">
-	<SectionMarker number="04" label="How we work" as="h2" />
-	<div class="how-grid">
-		<div class="how-body">
-			<p class="how-lede">
-				You talk directly to the engineer doing the work. The principal is on every call, in
-				every PR, and answerable for every deliverable. We're a small, focused team of senior
-				consultants — collaborators come in by name when their craft is what the job calls for.
-				Nothing gets handed to a junior you've never met.
-			</p>
-			<p>
-				The audit comes back as a written document, not a slide deck. The fractional engagements
-				are billed monthly, scoped weekly, and ended cleanly when the team is past the hard part.
-				Modernization runs as a project — fixed milestones, real handoffs, code that your next
-				engineer can read.
-			</p>
-			<p>
-				<a href="/approach/">Read more about how we work →</a>
-			</p>
-		</div>
-	</div>
-</section>
-
-<section class="container section-block closing">
 	<div class="closing-grid">
 		<div>
-			<SectionMarker number="05" label="Next step" />
-			<h2>If something here sounds like your problem, the call is free.</h2>
-			<p class="closing-body">
-				Forty-five minutes. We listen, we ask, we tell you what we'd do.
-			</p>
+			<SectionMarker number="04" label="Take the first step" />
+			<h2>If something here sounds like your problem, we'd love to chat.</h2>
 		</div>
 		<div class="closing-cta">
 			<BookCallCTA size="large" />
@@ -379,8 +396,75 @@
 		color: var(--forest);
 	}
 
-	.band {
-		margin-top: var(--s-5);
+	.entries {
+		list-style: none;
+		margin: var(--s-7) 0 0 0;
+		padding: 0;
+		border-top: 1px solid var(--rule-strong);
+	}
+
+	.entry {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: var(--s-4);
+		padding: var(--s-7) 0;
+		border-bottom: 1px solid var(--rule);
+	}
+
+	.entry-head {
+		display: flex;
+		flex-direction: column;
+		gap: var(--s-2);
+	}
+
+	.entry-tag {
+		font-family: var(--font-mono);
+		font-size: var(--fs-caption);
+		text-transform: uppercase;
+		letter-spacing: 0.14em;
+		color: var(--muted);
+		font-weight: 500;
+		margin: 0;
+	}
+
+	.entry-tag .glyph {
+		color: var(--brick);
+	}
+
+	.entry-eyebrow {
+		font-family: var(--font-mono);
+		font-size: var(--fs-caption);
+		text-transform: uppercase;
+		letter-spacing: 0.18em;
+		color: var(--ink-2);
+		margin: 0;
+	}
+
+	.entry-headline {
+		font-family: var(--font-display);
+		font-weight: 500;
+		font-size: clamp(1.875rem, 3.6vw, 2.625rem);
+		line-height: 1.08;
+		letter-spacing: -0.015em;
+		margin: 0 0 var(--s-4) 0;
+		color: var(--ink);
+		text-wrap: balance;
+		max-width: 22ch;
+	}
+
+	.entry-headline em {
+		font-style: italic;
+		color: var(--brick);
+		font-weight: 500;
+	}
+
+	.entry-para {
+		font-family: var(--font-body);
+		font-size: var(--fs-body-lg);
+		color: var(--ink-2);
+		line-height: 1.55;
+		margin: 0;
+		max-width: 52ch;
 	}
 
 	.opinions-lede {
@@ -503,6 +587,18 @@
 
 		.closing-cta {
 			text-align: right;
+		}
+	}
+
+	@media (min-width: 860px) {
+		.entry {
+			grid-template-columns: minmax(180px, 14rem) 1fr;
+			gap: var(--s-7);
+			padding: var(--s-8) 0;
+		}
+
+		.entry-head {
+			padding-top: var(--s-2);
 		}
 	}
 

@@ -83,7 +83,7 @@
 		</p>
 		<p>
 			We will tell you when you don't need us. We will tell you when a problem is the wrong size
-			for our shape. We will tell you, before you write a check, when an audit is going to come
+			for our shape. We will tell you, before you write a check, when a survey is going to come
 			back saying "the system is fine, fix the team."
 		</p>
 	</div>

@@ -53,7 +53,7 @@ schemas in `src/lib/content/schema.ts`. The build fails on any violation.
 - `src/lib/components/` — Meta, BookCallCTA, Button, Header, Footer, EditorialList, SectionMarker, StatBlock, CaseStudyMeta
 - `src/lib/components/layouts/{CaseStudy,Essay}.svelte` — mdsvex wrappers
 - `src/lib/content/{schema,loaders}.ts` — Zod schemas + typed glob loaders
-- `src/lib/config.ts` — site URL, Cal.com link, Plausible event name, audit price
+- `src/lib/config.ts` — site URL, Cal.com link, Plausible event name, survey price
 - `src/lib/styles/{tokens,base}.css` — DESIGN.md tokens + base typography
 - `scripts/validate-content.ts` — prebuild content validation
 
@@ -63,7 +63,7 @@ schemas in `src/lib/content/schema.ts`. The build fails on any violation.
 2. **Plausible** — register `architecture_call_booked` as a custom event on the dashboard.
 3. **OG default** — convert `static/og/og-default.svg` to `static/og/og-default.png` (see `static/og/README.md`).
 4. **Case study consent** — written/recorded approval from each anonymized client (TODOS.md context).
-5. **Audit pricing** — confirm `AUDIT_PRICE_USD` in `src/lib/config.ts`.
+5. **Survey pricing** — confirm `SURVEY_PRICE_USD` in `src/lib/config.ts`.
 
 ## Adding content
 

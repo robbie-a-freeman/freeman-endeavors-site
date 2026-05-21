@@ -18,7 +18,7 @@
 			</h1>
 			<p class="lede">
 				Freeman Endeavors is a small consultancy that helps SMBs unstick the systems they
-				already depend on. We start with a fixed-price architecture audit and grow from
+				already depend on. We start with a fixed-price architecture survey and grow from
 				there — fractional leadership, modernization work, or nothing at all if nothing
 				is what's right.
 			</p>

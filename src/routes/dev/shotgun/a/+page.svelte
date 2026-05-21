@@ -23,7 +23,7 @@
 
 		<p class="lede">
 			A small consultancy that helps SMBs unstick the systems they already depend on.
-			Fixed-price architecture audits. Fractional engineering. Modernization done slowly,
+			Fixed-price architecture surveys. Fractional engineering. Modernization done slowly,
 			on purpose.
 		</p>
 
