@@ -8,7 +8,15 @@
 	<div class="container footer-inner">
 		<div class="footer-grid">
 			<div class="brand">
-				<a href="/" class="wordmark">{SITE.name}</a>
+				<a href="/" class="brand-lockup" aria-label={SITE.name}>
+					<img
+						src="/brand/lockup/lockup-stacked-620.png"
+						srcset="/brand/lockup/lockup-stacked-620.png 1x, /brand/lockup/lockup-stacked-1240.png 2x"
+						alt=""
+						width="620"
+						height="540"
+					/>
+				</a>
 				<p class="tagline">{SITE.tagline}</p>
 			</div>
 			<nav aria-label="Footer">
@@ -51,14 +59,26 @@
 		gap: var(--s-6);
 	}
 
-	.brand .wordmark {
-		font-family: var(--font-display);
-		font-weight: 500;
-		font-size: 1.5rem;
-		color: var(--ink);
-		text-decoration: none;
+	.brand .brand-lockup {
 		display: block;
-		margin-bottom: var(--s-2);
+		text-decoration: none;
+		margin-bottom: var(--s-3);
+		transition: opacity var(--t-state) var(--ease);
+	}
+
+	.brand .brand-lockup img {
+		display: block;
+		width: 100%;
+		max-width: 180px;
+		height: auto;
+	}
+
+	:global(html[data-theme='dark']) .brand .brand-lockup img {
+		filter: invert(0.92) hue-rotate(180deg) saturate(0.85);
+	}
+
+	.brand .brand-lockup:hover {
+		opacity: 0.78;
 	}
 
 	.brand .tagline {

@@ -32,7 +32,7 @@ describe('Meta', () => {
 	it('falls back to og-default when ogImage is not supplied', () => {
 		render(Meta, { title: 'Services', description: 'Our services.' });
 		expect(getProp('og:image')?.getAttribute('content')).toBe(
-			'https://freemanendeavors.com/og/og-default.png'
+			'https://freemanendeavors.com/brand/og/og-default.png'
 		);
 	});
 

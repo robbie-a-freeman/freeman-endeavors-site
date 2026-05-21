@@ -9,7 +9,7 @@
 		ogType?: 'website' | 'article';
 	}
 
-	const { title, description, ogImage = '/og/og-default.png', ogType = 'website' }: Props = $props();
+	const { title, description, ogImage = '/brand/og/og-default.png', ogType = 'website' }: Props = $props();
 
 	const fullTitle = $derived(`${title} — ${SITE.titleSuffix}`);
 	// T5-followup: HTML-escape description to prevent Meta-tag injection

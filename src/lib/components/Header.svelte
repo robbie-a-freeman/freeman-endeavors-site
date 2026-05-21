@@ -35,7 +35,15 @@
 
 <header class="header">
 	<div class="container header-inner">
-		<a href="/" class="wordmark" onclick={closeDrawer}>{SITE.name}</a>
+		<a href="/" class="brand-lockup" onclick={closeDrawer} aria-label={SITE.name}>
+			<img
+				src="/brand/lockup/lockup-horizontal-780.png"
+				srcset="/brand/lockup/lockup-horizontal-780.png 1x, /brand/lockup/lockup-horizontal-1560.png 2x"
+				alt=""
+				width="780"
+				height="160"
+			/>
+		</a>
 
 		<nav class="nav-desktop" aria-label="Primary">
 			<ul>
@@ -120,17 +128,25 @@
 		padding-bottom: var(--s-3);
 	}
 
-	.wordmark {
-		font-family: var(--font-display);
-		font-weight: 500;
-		font-size: 1.25rem;
-		color: var(--ink);
+	.brand-lockup {
+		display: inline-flex;
+		align-items: center;
 		text-decoration: none;
-		letter-spacing: -0.01em;
+		transition: opacity var(--t-state) var(--ease);
 	}
 
-	.wordmark:hover {
-		color: var(--ink-2);
+	.brand-lockup img {
+		display: block;
+		height: 44px;
+		width: auto;
+	}
+
+	:global(html[data-theme='dark']) .brand-lockup img {
+		filter: invert(0.92) hue-rotate(180deg) saturate(0.85);
+	}
+
+	.brand-lockup:hover {
+		opacity: 0.78;
 	}
 
 	.nav-desktop {

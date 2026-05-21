@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 600" role="img" aria-label="Freeman Endeavors primary logo lockup">
+  <rect width="1500" height="600" fill="#FAF7F2"/>
+
+  <image href="../source/figure-wide.png" x="40" y="60" width="550" height="450" preserveAspectRatio="xMidYMid meet"/>
+
+  <line x1="630" y1="80" x2="630" y2="520" stroke="#B8B3A6" stroke-width="1"/>
+
+  <text x="680" y="260" font-family="'Fraunces Variable', Fraunces, Georgia, 'Times New Roman', serif" font-size="130" font-weight="500" fill="#1A1A18" letter-spacing="-2.4" style="font-variation-settings: 'opsz' 144, 'SOFT' 50, 'WONK' 0;">Freeman</text>
+
+  <text x="680" y="400" font-family="'Fraunces Variable', Fraunces, Georgia, 'Times New Roman', serif" font-size="130" font-weight="500" fill="#1A1A18" letter-spacing="-2.4" style="font-variation-settings: 'opsz' 144, 'SOFT' 50, 'WONK' 0;">Endeavors</text>
+
+  <text x="680" y="460" font-family="'Instrument Sans', system-ui, sans-serif" font-size="22" font-weight="500" fill="#2E2D29" letter-spacing="4">SOFTWARE CONSULTING</text>
+</svg>
