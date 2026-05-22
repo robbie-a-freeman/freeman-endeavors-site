@@ -7,9 +7,7 @@
 
 	const navLinks = [
 		{ href: '/services/', label: 'Services' },
-		{ href: '/case-studies/', label: 'Case studies' },
-		{ href: '/approach/', label: 'Approach' },
-		{ href: '/writing/', label: 'Writing' }
+		{ href: '/approach/', label: 'Approach' }
 	];
 
 	const isActive = (href: string) => {

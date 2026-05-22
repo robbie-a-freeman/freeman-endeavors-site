@@ -190,9 +190,6 @@
 				while keeping costs down is attainable through good decisionmaking and sound
 				development processes.
 			</p>
-			<a href="/case-studies/vr-edtech-second-principal/" class="opinion-link">
-				See: a Kafka migration on AWS MSK →
-			</a>
 		</article>
 
 		<article class="opinion">
@@ -206,9 +203,6 @@
 				forgot to add. We read your schema and your slowest queries before we read your
 				application code. If the data layer is wrong, nothing on top of it is going to hold up.
 			</p>
-			<a href="/case-studies/workforce-saas-founding-engineer/" class="opinion-link">
-				See: a multi-tenant data model built to survive a rewrite →
-			</a>
 		</article>
 
 		<article class="opinion">
@@ -222,9 +216,6 @@
 				for client teams between leadership hires, and for the engineers who pick up the code
 				after we leave.
 			</p>
-			<a href="/case-studies/higher-ed-donation-page/" class="opinion-link">
-				See: six weeks to wrap an immovable CRM →
-			</a>
 		</article>
 	</div>
 </section>
@@ -505,19 +496,6 @@
 		max-width: 60ch;
 		margin: 0 0 var(--s-3) 0;
 		line-height: 1.55;
-	}
-
-	.opinion-link {
-		font-family: var(--font-mono);
-		font-size: var(--fs-caption);
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		color: var(--forest);
-		text-decoration: none;
-	}
-
-	.opinion-link:hover {
-		text-decoration: underline;
 	}
 
 	.how-grid {

@@ -16,8 +16,6 @@
 
 	<ul class="links">
 		<li><a href="/services/">Services</a> — what we do and what it costs</li>
-		<li><a href="/case-studies/">Case studies</a> — three engagements written honestly</li>
-		<li><a href="/writing/">Writing</a> — how we think, written down</li>
 		<li><a href="/approach/">Approach</a> — values, methodology, the team</li>
 	</ul>
 

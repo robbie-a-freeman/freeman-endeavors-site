@@ -23,9 +23,7 @@
 				<h4 class="caption">Site</h4>
 				<ul>
 					<li><a href="/services/">Services</a></li>
-					<li><a href="/case-studies/">Case studies</a></li>
 					<li><a href="/approach/">Approach</a></li>
-					<li><a href="/writing/">Writing</a></li>
 					<li><a href={CTA.href}>Contact</a></li>
 				</ul>
 			</nav>
