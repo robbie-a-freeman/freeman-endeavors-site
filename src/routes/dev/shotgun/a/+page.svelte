@@ -22,9 +22,8 @@
 		<hr class="rule rule-bottom" />
 
 		<p class="lede">
-			A small consultancy that helps SMBs unstick the systems they already depend on.
-			Fixed-price architecture surveys. Fractional engineering. Modernization done slowly,
-			on purpose.
+			A small consultancy that helps SMBs unstick the systems they already depend on. Fixed-price
+			architecture surveys. Fractional engineering. Modernization done slowly, on purpose.
 		</p>
 
 		<div class="cta-row">

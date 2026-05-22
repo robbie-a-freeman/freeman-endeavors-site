@@ -2,9 +2,23 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/png" sizes="32x32" href="%sveltekit.assets%/brand/favicon/favicon-32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="%sveltekit.assets%/brand/favicon/favicon-16.png" />
-		<link rel="apple-touch-icon" sizes="180x180" href="%sveltekit.assets%/brand/favicon/apple-touch-icon.png" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="%sveltekit.assets%/brand/favicon/favicon-32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="%sveltekit.assets%/brand/favicon/favicon-16.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="%sveltekit.assets%/brand/favicon/apple-touch-icon.png"
+		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="theme-color" content="#FAF7F2" />
 		<script>
@@ -14,7 +28,8 @@
 				try {
 					var saved = localStorage.getItem('fe-theme');
 					var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-					var theme = saved === 'dark' || saved === 'light' ? saved : prefersDark ? 'dark' : 'light';
+					var theme =
+						saved === 'dark' || saved === 'light' ? saved : prefersDark ? 'dark' : 'light';
 					document.documentElement.setAttribute('data-theme', theme);
 				} catch (_e) {
 					document.documentElement.setAttribute('data-theme', 'light');

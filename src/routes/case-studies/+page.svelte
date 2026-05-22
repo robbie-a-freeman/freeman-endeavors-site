@@ -4,10 +4,9 @@
 	import BookCallCTA from '$lib/components/BookCallCTA.svelte';
 	import { loadCaseStudies } from '$lib/content/loaders';
 
-	const modules = import.meta.glob<{ metadata?: Record<string, unknown> }>(
-		'./*/+page.svelte.md',
-		{ eager: true }
-	);
+	const modules = import.meta.glob<{ metadata?: Record<string, unknown> }>('./*/+page.svelte.md', {
+		eager: true
+	});
 	const entries = loadCaseStudies(modules);
 </script>
 
@@ -20,8 +19,8 @@
 	<p class="caption">Selected engagements</p>
 	<h1>Three engagements, written honestly.</h1>
 	<p class="lede">
-		Anonymized to protect clients we still work with. The systems, the constraints, and the
-		outcomes are real. The metrics come from the clients themselves, not from us.
+		Anonymized to protect clients we still work with. The systems, the constraints, and the outcomes
+		are real. The metrics come from the clients themselves, not from us.
 	</p>
 </header>
 
@@ -38,8 +37,8 @@
 		<div>
 			<h2>Want to talk about a system like one of these?</h2>
 			<p>
-				The architecture call is free. Forty-five minutes, no deck, no follow-up unless you ask
-				for one.
+				The architecture call is free. Forty-five minutes, no deck, no follow-up unless you ask for
+				one.
 			</p>
 		</div>
 		<div><BookCallCTA size="large" /></div>

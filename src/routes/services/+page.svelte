@@ -52,37 +52,36 @@
 			<p>
 				A written architecture read of your system, roughly 4,000 to 6,000 words, walked through
 				live on a 90-minute call with you and whoever else needs to be in the room. After the
-				walkthrough we leave you with a prioritized recommendations document that another engineer
-				— ours, yours, or someone else's — can pick up and execute against.
+				walkthrough we leave you with a prioritized recommendations document that another engineer —
+				ours, yours, or someone else's — can pick up and execute against.
 			</p>
 
-				<p>
-					The deliverables stay yours. Nothing about the survey is locked to working with us
-					afterward. If you take our document, hand it to your existing team, and never call us
-					again, that's a successful survey by our definition.
-				</p>
+			<p>
+				The deliverables stay yours. Nothing about the survey is locked to working with us
+				afterward. If you take our document, hand it to your existing team, and never call us again,
+				that's a successful survey by our definition.
+			</p>
 
 			<h4>What we look for</h4>
 			<p>
-				The survey reads your system through three lenses. We have opinions about each of them,
-				and the deliverable will name them out loud.
+				The survey reads your system through three lenses. We have opinions about each of them, and
+				the deliverable will name them out loud.
 			</p>
 			<ul class="look-for">
 				<li>
-					<strong>The cloud/fleet decision.</strong> Serverless makes sense for some workloads
-					and is a budget bomb for others. VM fleets are the right answer more often than the
-					industry admits. We'll tell you which one you have, with numbers.
+					<strong>The cloud/fleet decision.</strong> Serverless makes sense for some workloads and is
+					a budget bomb for others. VM fleets are the right answer more often than the industry admits.
+					We'll tell you which one you have, with numbers.
 				</li>
 				<li>
-					<strong>The data layer's three-year horizon.</strong> Schemas, indexes, GraphQL
-					resolvers, and the queries that get slower under load. Most SMB systems are fine until
-					year three — we read your schema and your slowest queries before we read your
-					application code.
+					<strong>The data layer's three-year horizon.</strong> Schemas, indexes, GraphQL resolvers, and
+					the queries that get slower under load. Most SMB systems are fine until year three — we read
+					your schema and your slowest queries before we read your application code.
 				</li>
 				<li>
 					<strong>The roadmap items that have been "next quarter" for six quarters.</strong>
-					There is always a reason. We tell you whether the reason is technical or
-					organizational, and which of the two is actually cheaper to fix.
+					There is always a reason. We tell you whether the reason is technical or organizational, and
+					which of the two is actually cheaper to fix.
 				</li>
 			</ul>
 
@@ -96,10 +95,10 @@
 
 			<h4>What it's not</h4>
 			<p>
-				The survey is not a code review of every file. It's not a security pentest. It's not the
-				fix — we won't ship a single line of production code as part of the survey itself, and we
-				won't write the tests you need. Those are separate engagements, and we'll tell you which
-				ones we think you actually need.
+				The survey is not a code review of every file. It's not a security pentest. It's not the fix
+				— we won't ship a single line of production code as part of the survey itself, and we won't
+				write the tests you need. Those are separate engagements, and we'll tell you which ones we
+				think you actually need.
 			</p>
 		</div>
 
@@ -127,40 +126,40 @@
 	<div class="service-grid">
 		<div class="service-body prose">
 			<p>
-				Fractional engagements are for the moments when your team is real but the leadership seat
-				is empty — your tech lead just left, your CTO is buried in the next round, or you've grown
-				past the point where the founder can carry the whole engineering function on the side. We
-				come in as the senior engineering voice for one to four days a week, and we hold that seat
-				until the full-time hire is in and up to speed.
+				Fractional engagements are for the moments when your team is real but the leadership seat is
+				empty — your tech lead just left, your CTO is buried in the next round, or you've grown past
+				the point where the founder can carry the whole engineering function on the side. We come in
+				as the senior engineering voice for one to four days a week, and we hold that seat until the
+				full-time hire is in and up to speed.
 			</p>
 
 			<h4>What you get</h4>
 			<p>
-				A named principal who shows up to your standups, your planning, your hiring loops, and
-				your incident reviews. Architecture decisions get made and written down. Code reviews
-				happen and the reviewer is somebody senior. Roadmaps have ranges on them. Your existing
-				engineers stop being the only people accountable for everything at once.
+				A named principal who shows up to your standups, your planning, your hiring loops, and your
+				incident reviews. Architecture decisions get made and written down. Code reviews happen and
+				the reviewer is somebody senior. Roadmaps have ranges on them. Your existing engineers stop
+				being the only people accountable for everything at once.
 			</p>
 
-				<p>
-					This is delivered work, not advisory work. We will write code where writing code is the
-					right answer. We will own incidents on call where that's the right answer. We are not
-					a fractional CTO product that shows up to a weekly meeting and emails a memo.
-				</p>
+			<p>
+				This is delivered work, not advisory work. We will write code where writing code is the
+				right answer. We will own incidents on call where that's the right answer. We are not a
+				fractional CTO product that shows up to a weekly meeting and emails a memo.
+			</p>
 
 			<h4>Who it's for</h4>
 			<p>
 				Teams of two to twelve engineers between leadership hires, or earlier-stage teams whose
-				founder-engineer is no longer the right person to own the engineering function but who
-				don't yet need — or can't yet afford — a full-time CTO.
+				founder-engineer is no longer the right person to own the engineering function but who don't
+				yet need — or can't yet afford — a full-time CTO.
 			</p>
 
 			<h4>What it's not</h4>
 			<p>
 				It is not a permanent placement. We agree on an end condition at the start: the new hire
-				lands, the system is stable enough to run for two quarters without senior intervention,
-				the project that prompted the engagement ships. When the end condition is met, the
-				engagement ends. Indefinite fractional engagements are a failure mode, not a goal.
+				lands, the system is stable enough to run for two quarters without senior intervention, the
+				project that prompted the engagement ships. When the end condition is met, the engagement
+				ends. Indefinite fractional engagements are a failure mode, not a goal.
 			</p>
 		</div>
 
@@ -200,24 +199,24 @@
 			<h4>What you get</h4>
 			<p>
 				A project with a written plan, fixed milestones, and a real handoff at the end. We work
-				inside your repository, against your existing team's review process, with feature flags
-				and incremental cutovers wherever there's a system already in production. Every change
-				lands behind a verification step. Every milestone is something you could ship to
-				production today if we walked away at that point.
+				inside your repository, against your existing team's review process, with feature flags and
+				incremental cutovers wherever there's a system already in production. Every change lands
+				behind a verification step. Every milestone is something you could ship to production today
+				if we walked away at that point.
 			</p>
 
-				<p>
-					Code that ships includes tests, runbooks, and documentation aimed at the engineer who
-					will own it after we leave. That engineer is not us. Collaboration is one of our four
-					values; we treat the post-handoff readability of code — and the knowledge transfer that
-					goes with it — as part of the deliverable, not polish.
-				</p>
+			<p>
+				Code that ships includes tests, runbooks, and documentation aimed at the engineer who will
+				own it after we leave. That engineer is not us. Collaboration is one of our four values; we
+				treat the post-handoff readability of code — and the knowledge transfer that goes with it —
+				as part of the deliverable, not polish.
+			</p>
 
 			<h4>Who it's for</h4>
 			<p>
-				Businesses with a system in production that's still load-bearing but is starting to slow
-				you down — hires take too long to onboard, every feature ships with a side of regression,
-				the framework is two majors behind, the database is one wrong query from a stall. Common
+				Businesses with a system in production that's still load-bearing but is starting to slow you
+				down — hires take too long to onboard, every feature ships with a side of regression, the
+				framework is two majors behind, the database is one wrong query from a stall. Common
 				examples: a Rails 4 monolith that needs to be a Rails 7 monolith, a 2017-era React + REST
 				app that wants to be Next.js + GraphQL, a Python 2 service that has run out of runway.
 			</p>
@@ -225,9 +224,9 @@
 			<h4>What it's not</h4>
 			<p>
 				It is not a rewrite-from-scratch. We do not believe in rewriting your system from a blank
-				editor. If our read of the codebase points to that conclusion, the survey would have said
-				so first, and we'd point you at a different team. The right team for a true greenfield
-				rebuild is usually not the right team for a careful modernization, and vice versa.
+				editor. If our read of the codebase points to that conclusion, the survey would have said so
+				first, and we'd point you at a different team. The right team for a true greenfield rebuild
+				is usually not the right team for a careful modernization, and vice versa.
 			</p>
 		</div>
 

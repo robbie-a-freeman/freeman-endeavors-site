@@ -25,7 +25,10 @@ test('simulated bookingSuccessful fires the Plausible event', async ({ page }) =
 	await page.addInitScript(() => {
 		Object.defineProperty(window, 'plausible', {
 			configurable: true,
-			value: (name: string) => (window as unknown as { __capturePlausible?: (n: string) => void }).__capturePlausible?.(name)
+			value: (name: string) =>
+				(window as unknown as { __capturePlausible?: (n: string) => void }).__capturePlausible?.(
+					name
+				)
 		});
 	});
 

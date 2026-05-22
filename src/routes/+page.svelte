@@ -2,13 +2,7 @@
 	import Meta from '$lib/components/Meta.svelte';
 	import BookCallCTA from '$lib/components/BookCallCTA.svelte';
 	import SectionMarker from '$lib/components/SectionMarker.svelte';
-	import { SITE, SURVEY_PRICE_USD } from '$lib/config';
-
-	const priceFmt = new Intl.NumberFormat('en-US', {
-		style: 'currency',
-		currency: 'USD',
-		maximumFractionDigits: 0
-	});
+	import { SITE } from '$lib/config';
 
 	const orgJsonLd = {
 		'@context': 'https://schema.org',
@@ -27,19 +21,18 @@
 />
 
 <svelte:head>
-	{@html `<script type="application/ld+json">${JSON.stringify(orgJsonLd)}</script>`}
+	<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+	{@html `<` + `script type="application/ld+json">${JSON.stringify(orgJsonLd)}<` + `/script>`}
 </svelte:head>
 
 <section class="hero">
 	<div class="container hero-grid">
 		<div class="hero-main">
 			<p class="hero-eyebrow"><span class="glyph">§</span> A SOFTWARE CONSULTANCY</p>
-			<h1>
-				We can guide you through your software endeavors.
-			</h1>
+			<h1>We can guide you through your software endeavors.</h1>
 			<p class="lede">
-				Meet Freeman Endeavors: we help SMBs build, ship, and maintain distributed cloud systems you can
-				depend on.
+				Meet Freeman Endeavors: we help SMBs build, ship, and maintain distributed cloud systems you
+				can depend on.
 			</p>
 			<br />
 			<p class="lede">
@@ -54,8 +47,10 @@
 
 			<div class="margin-item">
 				<p class="margin-label"><span class="num">§ 01</span> · DISCOVERY</p>
-				<p class="margin-body">A free 45-minute discovery call focused on your architectural
-				requirements. Tell us what your situation is and we'll assess how we can help.</p>
+				<p class="margin-body">
+					A free 45-minute discovery call focused on your architectural requirements. Tell us what
+					your situation is and we'll assess how we can help.
+				</p>
 			</div>
 
 			<hr class="margin-rule" />
@@ -63,8 +58,8 @@
 			<div class="margin-item">
 				<p class="margin-label"><span class="num">§ 02</span> · PROPOSAL</p>
 				<p class="margin-body">
-					We propose a plan with clear timelines, budget, and deliverables.
-					Usually this is a focused, deep survey of your technical landscape.
+					We propose a plan with clear timelines, budget, and deliverables. Usually this is a
+					focused, deep survey of your technical landscape.
 				</p>
 			</div>
 
@@ -73,8 +68,8 @@
 			<div class="margin-item">
 				<p class="margin-label"><span class="num">§ 03</span> · SURVEY</p>
 				<p class="margin-body">
-					We execute the agreed-upon plan and communicate with you
-					throughout the process. After it's concluded, we'll discuss the findings.
+					We execute the agreed-upon plan and communicate with you throughout the process. After
+					it's concluded, we'll discuss the findings.
 				</p>
 			</div>
 
@@ -83,8 +78,8 @@
 			<div class="margin-item">
 				<p class="margin-label"><span class="num">§ 04</span> · SUPPORT</p>
 				<p class="margin-body">
-					We're not about the survey-and-dash life. We want to work with clients that
-					we can support for the long haul.
+					We're not about the survey-and-dash life. We want to work with clients that we can support
+					for the long haul.
 				</p>
 			</div>
 
@@ -155,8 +150,7 @@
 					Automating mission-critical processes while <em>maintaining compliance</em>?
 				</h3>
 				<p class="entry-para">
-					Your systems should honor the agreements you make with your clients. We can ensure
-					that.
+					Your systems should honor the agreements you make with your clients. We can ensure that.
 				</p>
 			</div>
 		</li>
@@ -185,10 +179,9 @@
 			</p>
 			<p class="opinion-body">
 				We've shipped all three: Lambda + API Gateway services running at scale, Kubernetes
-				footprints sized for a SaaS doing real revenue, and Linux-VM fleets where the right
-				answer was not to abstract the hardware. Maintaining software at an enterprise scale
-				while keeping costs down is attainable through good decisionmaking and sound
-				development processes.
+				footprints sized for a SaaS doing real revenue, and Linux-VM fleets where the right answer
+				was not to abstract the hardware. Maintaining software at an enterprise scale while keeping
+				costs down is attainable through good decisionmaking and sound development processes.
 			</p>
 		</article>
 
@@ -197,11 +190,11 @@
 				<span class="glyph">§</span> 03.B · THE DATA LAYER
 			</p>
 			<p class="opinion-body">
-				Postgres, GraphQL, and the joints between them. Most SMB systems are fine until year
-				three, when the schema decisions made at year one start charging interest — joins that
-				should have been denormalized, resolvers that hide an N+1, an index that everyone
-				forgot to add. We read your schema and your slowest queries before we read your
-				application code. If the data layer is wrong, nothing on top of it is going to hold up.
+				Postgres, GraphQL, and the joints between them. Most SMB systems are fine until year three,
+				when the schema decisions made at year one start charging interest — joins that should have
+				been denormalized, resolvers that hide an N+1, an index that everyone forgot to add. We read
+				your schema and your slowest queries before we read your application code. If the data layer
+				is wrong, nothing on top of it is going to hold up.
 			</p>
 		</article>
 
@@ -210,11 +203,10 @@
 				<span class="glyph">§</span> 03.C · ARCHITECTURE, SCOPING, AND COORDINATION
 			</p>
 			<p class="opinion-body">
-				The hardest part of senior engineering is not writing code. It's deciding what to
-				build, in what order, with what team — and being honest about which parts of the work
-				you don't yet know enough to estimate. We've owned that work for our own engagements,
-				for client teams between leadership hires, and for the engineers who pick up the code
-				after we leave.
+				The hardest part of senior engineering is not writing code. It's deciding what to build, in
+				what order, with what team — and being honest about which parts of the work you don't yet
+				know enough to estimate. We've owned that work for our own engagements, for client teams
+				between leadership hires, and for the engineers who pick up the code after we leave.
 			</p>
 		</article>
 	</div>

@@ -4,7 +4,10 @@
 	import BookCallCTA from '$lib/components/BookCallCTA.svelte';
 </script>
 
-<Meta title="Page not found" description="The page you were looking for doesn't exist on this site." />
+<Meta
+	title="Page not found"
+	description="The page you were looking for doesn't exist on this site."
+/>
 
 <section class="container error">
 	<p class="caption">{$page.status} · Missing page</p>

@@ -76,13 +76,7 @@
 	</div>
 
 	{#if drawerOpen}
-		<div
-			id="mobile-drawer"
-			class="drawer"
-			role="dialog"
-			aria-modal="true"
-			aria-label="Navigation"
-		>
+		<div id="mobile-drawer" class="drawer" role="dialog" aria-modal="true" aria-label="Navigation">
 			<nav aria-label="Primary mobile">
 				<ul>
 					{#each navLinks as link}

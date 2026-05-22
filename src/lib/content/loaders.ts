@@ -16,9 +16,7 @@ const slugFromPath = (path: string): string => {
 	return match[1];
 };
 
-export function loadCaseStudies(
-	modules: Record<string, GlobModule>
-): CaseStudyEntry[] {
+export function loadCaseStudies(modules: Record<string, GlobModule>): CaseStudyEntry[] {
 	const entries: CaseStudyEntry[] = [];
 	for (const [path, mod] of Object.entries(modules)) {
 		const slug = slugFromPath(path);

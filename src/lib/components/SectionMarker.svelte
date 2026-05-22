@@ -13,7 +13,10 @@
 {:else if as === 'h3'}
 	<h3 class="marker"><span class="glyph">§</span> {number} · <span class="label">{label}</span></h3>
 {:else}
-	<div class="marker"><span class="glyph">§</span> {number} · <span class="label">{label}</span></div>
+	<div class="marker">
+		<span class="glyph">§</span>
+		{number} · <span class="label">{label}</span>
+	</div>
 {/if}
 
 <style>

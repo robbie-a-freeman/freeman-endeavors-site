@@ -9,7 +9,12 @@
 		ogType?: 'website' | 'article';
 	}
 
-	const { title, description, ogImage = '/brand/og/og-default.png', ogType = 'website' }: Props = $props();
+	const {
+		title,
+		description,
+		ogImage = '/brand/og/og-default.png',
+		ogType = 'website'
+	}: Props = $props();
 
 	const fullTitle = $derived(`${title} — ${SITE.titleSuffix}`);
 	// T5-followup: HTML-escape description to prevent Meta-tag injection
@@ -23,9 +28,7 @@
 			.replace(/>/g, '&gt;')
 	);
 	const canonical = $derived(`${SITE.url}${$page.url.pathname}`);
-	const absoluteOgImage = $derived(
-		ogImage.startsWith('http') ? ogImage : `${SITE.url}${ogImage}`
-	);
+	const absoluteOgImage = $derived(ogImage.startsWith('http') ? ogImage : `${SITE.url}${ogImage}`);
 </script>
 
 <svelte:head>

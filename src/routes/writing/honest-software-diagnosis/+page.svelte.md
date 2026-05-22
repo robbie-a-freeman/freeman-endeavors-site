@@ -8,7 +8,7 @@ published: '2026-05-12'
 
 The first time we sat in a room with a CEO who'd been told three different things by three different consultancies about what was wrong with his software, I noticed something the meeting was not about. Two of the firms had told him to rewrite. The third had told him to migrate to their preferred platform. None of them had told him what was actually wrong.
 
-This is the gap the survey is for. We call ours a survey, not an audit, on purpose. Audit is the industry term, and the industry version of it — the format that gets sold to small-and-mid-sized businesses today — is, almost always, the wrong shape. It is too long. It is too marketing-coded. It is too obviously trying to lead somewhere — usually toward the firm's flagship six-month engagement. And it almost never makes the call most clients actually need somebody to make for them, which is the call to *not* do the obvious next project.
+This is the gap the survey is for. We call ours a survey, not an audit, on purpose. Audit is the industry term, and the industry version of it — the format that gets sold to small-and-mid-sized businesses today — is, almost always, the wrong shape. It is too long. It is too marketing-coded. It is too obviously trying to lead somewhere — usually toward the firm's flagship six-month engagement. And it almost never makes the call most clients actually need somebody to make for them, which is the call to _not_ do the obvious next project.
 
 This piece is about why we built ours the way we did, what it actually delivers, and the diagnosis it ends up making that most software audits — and most rewrites — quietly avoid.
 

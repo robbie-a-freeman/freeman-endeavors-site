@@ -144,8 +144,8 @@
 				<p class="caption">The scheduler couldn't load.</p>
 				<h2>Email us instead.</h2>
 				<p>
-					Send a note to <a href="mailto:{SITE.email}">{SITE.email}</a> with a one-line summary of
-					what's going on. We'll reply with two or three time options within a business day.
+					Send a note to <a href="mailto:{SITE.email}">{SITE.email}</a> with a one-line summary of what's
+					going on. We'll reply with two or three time options within a business day.
 				</p>
 			</div>
 		{/if}
@@ -155,8 +155,8 @@
 <section class="container fallback">
 	<h2>Or send a note.</h2>
 	<p>
-		If a calendar embed isn't your speed, <a href="mailto:{SITE.email}">{SITE.email}</a> works
-		just as well. Tell us briefly what's going on; we'll reply with times.
+		If a calendar embed isn't your speed, <a href="mailto:{SITE.email}">{SITE.email}</a> works just as
+		well. Tell us briefly what's going on; we'll reply with times.
 	</p>
 </section>
 

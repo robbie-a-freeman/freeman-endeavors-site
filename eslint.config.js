@@ -28,6 +28,15 @@ export default [
 		}
 	},
 	{
-		ignores: ['build/', '.svelte-kit/', 'dist/', 'static/', 'node_modules/']
+		rules: {
+			'@typescript-eslint/no-unused-vars': [
+				'error',
+				{ argsIgnorePattern: '^_', varsIgnorePattern: '^_', caughtErrorsIgnorePattern: '^_' }
+			],
+			'svelte/valid-compile': ['error', { ignoreWarnings: true }]
+		}
+	},
+	{
+		ignores: ['build/', '.svelte-kit/', '.netlify/', 'dist/', 'static/', 'node_modules/']
 	}
 ];

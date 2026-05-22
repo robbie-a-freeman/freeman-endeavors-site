@@ -19,18 +19,18 @@ brand/
 
 ## When to use what
 
-| Need                                  | File                                                       |
-| ------------------------------------- | ---------------------------------------------------------- |
-| Browser tab icon (32 / 16)            | `favicon/favicon-32.png`, `favicon/favicon-16.png`         |
-| Browser tab icon (legacy multi-res)   | `favicon/favicon.ico`                                      |
-| iOS home-screen icon                  | `favicon/apple-touch-icon.png` (180×180)                   |
-| Android / PWA install                 | `favicon/icon-192.png`, `favicon/icon-512.png`             |
-| Android adaptive (safe-zone)          | `favicon/icon-maskable-512.png`                            |
-| Site header / nav                     | `lockup/lockup-horizontal.svg`                             |
-| Footer / centered placement           | `lockup/lockup-stacked.svg`                                |
-| Hero artwork on landing pages         | `logo/logo-full.svg` (primary logo lockup with full scene) |
-| Social-share card / Open Graph        | `og/og-default.png`                                        |
-| Print-ready at any size               | PNG renders at 1240 / 1500 / 1760 / 3000 px wide           |
+| Need                                | File                                                       |
+| ----------------------------------- | ---------------------------------------------------------- |
+| Browser tab icon (32 / 16)          | `favicon/favicon-32.png`, `favicon/favicon-16.png`         |
+| Browser tab icon (legacy multi-res) | `favicon/favicon.ico`                                      |
+| iOS home-screen icon                | `favicon/apple-touch-icon.png` (180×180)                   |
+| Android / PWA install               | `favicon/icon-192.png`, `favicon/icon-512.png`             |
+| Android adaptive (safe-zone)        | `favicon/icon-maskable-512.png`                            |
+| Site header / nav                   | `lockup/lockup-horizontal.svg`                             |
+| Footer / centered placement         | `lockup/lockup-stacked.svg`                                |
+| Hero artwork on landing pages       | `logo/logo-full.svg` (primary logo lockup with full scene) |
+| Social-share card / Open Graph      | `og/og-default.png`                                        |
+| Print-ready at any size             | PNG renders at 1240 / 1500 / 1760 / 3000 px wide           |
 
 ## Design system tokens (from `DESIGN.md`)
 

@@ -24,6 +24,7 @@ Package manager is **npm** (the `netlify.toml` build command runs `npm ci && npm
 Routes live under `src/routes/`, components under `src/lib/components/`. mdsvex (`.svelte.md`) drives long-form content with frontmatter validated by Zod.
 
 **Routes**
+
 - `/` — homepage with asymmetric editorial hero
 - `/services/` — three anchored sections (#survey / #fractional / #modernization)
 - `/case-studies/` — index listing; each `<slug>/+page.svelte.md` is one anonymized engagement
@@ -34,6 +35,7 @@ Routes live under `src/routes/`, components under `src/lib/components/`. mdsvex 
 - `/+error.svelte` — 404
 
 **Shared components (`src/lib/components/`)**
+
 - `Meta.svelte` — head block: title, description, OG, Twitter, canonical (HTML-escapes description against meta-tag injection)
 - `BookCallCTA.svelte` — single source of truth for the locked CTA copy ("Book a 45-minute architecture call") and `/contact/` target
 - `Button.svelte` — Primary / Ghost / Ink variants with `default` / `large` sizes
@@ -46,6 +48,7 @@ Routes live under `src/routes/`, components under `src/lib/components/`. mdsvex 
 - `layouts/CaseStudy.svelte`, `layouts/Essay.svelte` — mdsvex page wrappers
 
 **Content infrastructure (`src/lib/content/`)**
+
 - `schema.ts` — Zod schemas for case-study + essay frontmatter
 - `loaders.ts` — `loadCaseStudies()`, `loadEssays()` — typed glob loaders, empty-array fallback
 - `scripts/validate-content.ts` — prebuild step that validates every frontmatter file against the Zod schemas
@@ -53,6 +56,7 @@ Routes live under `src/routes/`, components under `src/lib/components/`. mdsvex 
 **Site config (`src/lib/config.ts`)** — site URL, Cal.com slug, Plausible event name, survey price. Single source of truth for cross-cutting constants.
 
 **Styling**
+
 - Tokens (color, type, spacing, motion) in `src/lib/styles/tokens.css` — derived from DESIGN.md
 - Base typography + reset in `src/lib/styles/base.css`
 - Fonts self-hosted via `@fontsource-variable/fraunces` + `@fontsource/instrument-sans` + `@fontsource/jetbrains-mono`
@@ -81,6 +85,7 @@ tool as your FIRST action. Do NOT answer directly, do NOT use other tools first.
 The skill has specialized workflows that produce better results than ad-hoc answers.
 
 Key routing rules:
+
 - Product ideas, "is this worth building", brainstorming → invoke office-hours
 - Bugs, errors, "why is this broken", 500 errors → invoke investigate
 - Ship, deploy, push, create PR → invoke ship

@@ -17,10 +17,9 @@
 				about your software.
 			</h1>
 			<p class="lede">
-				Freeman Endeavors is a small consultancy that helps SMBs unstick the systems they
-				already depend on. We start with a fixed-price architecture survey and grow from
-				there — fractional leadership, modernization work, or nothing at all if nothing
-				is what's right.
+				Freeman Endeavors is a small consultancy that helps SMBs unstick the systems they already
+				depend on. We start with a fixed-price architecture survey and grow from there — fractional
+				leadership, modernization work, or nothing at all if nothing is what's right.
 			</p>
 		</div>
 
@@ -71,8 +70,12 @@
 		background-image:
 			radial-gradient(rgba(26, 26, 24, 0.04) 1px, transparent 1px),
 			radial-gradient(rgba(26, 26, 24, 0.03) 1px, transparent 1px);
-		background-size: 7px 7px, 11px 11px;
-		background-position: 0 0, 3px 3px;
+		background-size:
+			7px 7px,
+			11px 11px;
+		background-position:
+			0 0,
+			3px 3px;
 	}
 
 	.grid {

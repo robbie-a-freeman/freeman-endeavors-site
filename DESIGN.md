@@ -30,13 +30,13 @@ All fonts loaded from Google Fonts; can self-host later if performance demands.
 - **Code:** **JetBrains Mono** — weight 400, used for code blocks in case studies and for section markers (`§ 01 · INTAKE`).
 - **Loading:** `<link>` from `fonts.googleapis.com` with `display=swap`. Preconnect to `fonts.gstatic.com`.
 - **Scale (px):**
-	- Display XL (hero): 64–76 · weight 500 · line-height 1.04 · letter-spacing -0.018em · opsz 96
-	- Display Large: 40–48 · weight 500 · line-height 1.08 · letter-spacing -0.015em
-	- Display Medium (section heads): 28–40 · weight 400–500 · line-height 1.12
-	- Body Large: 19 · weight 400 · line-height 1.50
-	- Body: 16 · weight 400 · line-height 1.55
-	- Body Small: 14 · weight 400 · line-height 1.55 · color muted
-	- Caption / Label: 11–12 · mono · letter-spacing 0.08–0.12em · uppercase
+  - Display XL (hero): 64–76 · weight 500 · line-height 1.04 · letter-spacing -0.018em · opsz 96
+  - Display Large: 40–48 · weight 500 · line-height 1.08 · letter-spacing -0.015em
+  - Display Medium (section heads): 28–40 · weight 400–500 · line-height 1.12
+  - Body Large: 19 · weight 400 · line-height 1.50
+  - Body: 16 · weight 400 · line-height 1.55
+  - Body Small: 14 · weight 400 · line-height 1.55 · color muted
+  - Caption / Label: 11–12 · mono · letter-spacing 0.08–0.12em · uppercase
 
 **Blacklist for this project:** Roboto (current), Inter, Poppins, Montserrat, Open Sans, Arial, Helvetica.
 
@@ -104,9 +104,9 @@ Redesigned surfaces, not inverted. Reduce saturation 10–15%.
 - **Approach:** Minimal-functional. The page does not perform; it presents.
 - **Easing:** `cubic-bezier(0.4, 0, 0.2, 1)` everywhere.
 - **Durations:**
-	- Micro (hover): 100 ms
-	- State change (color, border): 200 ms
-	- Entry fade: 600 ms
+  - Micro (hover): 100 ms
+  - State change (color, border): 200 ms
+  - Entry fade: 600 ms
 - **Reject:** scroll-driven choreography, parallax, viewport-pinned animations, gratuitous lottie/sequence work.
 
 ## Components
@@ -122,14 +122,14 @@ Redesigned surfaces, not inverted. Reduce saturation 10–15%.
 
 ## Decisions Log
 
-| Date | Decision | Rationale |
-|------|----------|-----------|
-| 2026-05-15 | Initial design system created | `/design-consultation` session synthesizing memory context (locked values, voice direction, audience), commissioned brand-research PDF, and visual analysis of 6 peer sites (corgibytes, testdouble, chariot, stride, thoughtworks, kunai) plus the current freemanendeavors.com baseline |
-| 2026-05-15 | Considered Editorial direction chosen | Position between Test Double's opinionated voice and Kunai's editorial discipline. Avoids Chariot-generic, Corgibytes-whimsy, and Kunai-Japanese-aesthetic. |
-| 2026-05-15 | Fraunces + Instrument Sans pairing | Reject overused Roboto / Inter / Poppins. Serif display signals writer, sans body signals operator. |
-| 2026-05-15 | Forest #1A4D2E retained, color use restricted | Keeps the existing green brand DNA but ends the green-monochrome wash. Color used as ink, not paint. |
-| 2026-05-15 | Brick #B85C3C adopted as risk accent | Deliberate departure from consultancy-blue category norm. No NJ/NY/PA peer uses this color. Signals "considered craftsperson, not enterprise SaaS." |
-| 2026-05-15 | Asymmetric editorial hero, not centered hero-block | Differentiates above the fold against Chariot/Stride/every-other-consulting-site. Demands strong type to carry. |
-| 2026-05-15 | Tech-stack pills demoted | Current grid promotes commoditized tools; new design treats tools as a supporting one-line row, not a featured section. Per memory `feedback_positioning_copy.md`: tools are table stakes, not differentiators. |
-| 2026-05-15 | Productized service offerings adopted (architecture survey / fractional leadership / legacy modernization) | Per PDF research + Corgibytes' "Code Health Check" playbook. Fixed-price entry offers lower the barrier to a first engagement. |
-| 2026-05-21 | "Architecture Audit" renamed to "Architecture Survey" | "Audit" carries overbearing/compliance connotations; "survey" reads as engineering mapping work. Anchor `#audit` → `#survey`; constants renamed; essay re-threaded so generic "audit" references contrast against ours. |
+| Date       | Decision                                                                                                   | Rationale                                                                                                                                                                                                                                                                                 |
+| ---------- | ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2026-05-15 | Initial design system created                                                                              | `/design-consultation` session synthesizing memory context (locked values, voice direction, audience), commissioned brand-research PDF, and visual analysis of 6 peer sites (corgibytes, testdouble, chariot, stride, thoughtworks, kunai) plus the current freemanendeavors.com baseline |
+| 2026-05-15 | Considered Editorial direction chosen                                                                      | Position between Test Double's opinionated voice and Kunai's editorial discipline. Avoids Chariot-generic, Corgibytes-whimsy, and Kunai-Japanese-aesthetic.                                                                                                                               |
+| 2026-05-15 | Fraunces + Instrument Sans pairing                                                                         | Reject overused Roboto / Inter / Poppins. Serif display signals writer, sans body signals operator.                                                                                                                                                                                       |
+| 2026-05-15 | Forest #1A4D2E retained, color use restricted                                                              | Keeps the existing green brand DNA but ends the green-monochrome wash. Color used as ink, not paint.                                                                                                                                                                                      |
+| 2026-05-15 | Brick #B85C3C adopted as risk accent                                                                       | Deliberate departure from consultancy-blue category norm. No NJ/NY/PA peer uses this color. Signals "considered craftsperson, not enterprise SaaS."                                                                                                                                       |
+| 2026-05-15 | Asymmetric editorial hero, not centered hero-block                                                         | Differentiates above the fold against Chariot/Stride/every-other-consulting-site. Demands strong type to carry.                                                                                                                                                                           |
+| 2026-05-15 | Tech-stack pills demoted                                                                                   | Current grid promotes commoditized tools; new design treats tools as a supporting one-line row, not a featured section. Per memory `feedback_positioning_copy.md`: tools are table stakes, not differentiators.                                                                           |
+| 2026-05-15 | Productized service offerings adopted (architecture survey / fractional leadership / legacy modernization) | Per PDF research + Corgibytes' "Code Health Check" playbook. Fixed-price entry offers lower the barrier to a first engagement.                                                                                                                                                            |
+| 2026-05-21 | "Architecture Audit" renamed to "Architecture Survey"                                                      | "Audit" carries overbearing/compliance connotations; "survey" reads as engineering mapping work. Anchor `#audit` → `#survey`; constants renamed; essay re-threaded so generic "audit" references contrast against ours.                                                                   |

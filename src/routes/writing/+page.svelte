@@ -4,10 +4,9 @@
 	import BookCallCTA from '$lib/components/BookCallCTA.svelte';
 	import { loadEssays } from '$lib/content/loaders';
 
-	const modules = import.meta.glob<{ metadata?: Record<string, unknown> }>(
-		'./*/+page.svelte.md',
-		{ eager: true }
-	);
+	const modules = import.meta.glob<{ metadata?: Record<string, unknown> }>('./*/+page.svelte.md', {
+		eager: true
+	});
 	const entries = loadEssays(modules);
 </script>
 
@@ -27,7 +26,11 @@
 </header>
 
 <section class="container list-wrap">
-	<EditorialList items={entries} baseHref="/writing/" emptyMessage="The first essay is on the way." />
+	<EditorialList
+		items={entries}
+		baseHref="/writing/"
+		emptyMessage="The first essay is on the way."
+	/>
 </section>
 
 <section class="container closing">

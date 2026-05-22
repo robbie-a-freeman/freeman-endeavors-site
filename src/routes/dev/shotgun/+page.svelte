@@ -27,9 +27,8 @@
 	<p class="dev-marker"><span class="glyph">§</span> DEV · /design-shotgun</p>
 	<h1>Homepage hero — 3 directions</h1>
 	<p class="lede">
-		Each link opens a working Svelte page using the real <code>tokens.css</code>,
-		Fraunces, and Instrument Sans. Compare them at the same viewport width to keep the
-		fidelity honest.
+		Each link opens a working Svelte page using the real <code>tokens.css</code>, Fraunces, and
+		Instrument Sans. Compare them at the same viewport width to keep the fidelity honest.
 	</p>
 
 	<ul class="variant-list">

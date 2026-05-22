@@ -36,8 +36,8 @@
 	<h1>A small firm, by intention.</h1>
 	<p class="lede">
 		Freeman Endeavors is a principal-led collective. The principal is on every engagement.
-		Collaborators come in by name when their craft is what the job calls for. The team scales to
-		the work; the work doesn't scale to the team.
+		Collaborators come in by name when their craft is what the job calls for. The team scales to the
+		work; the work doesn't scale to the team.
 	</p>
 </header>
 
@@ -50,7 +50,10 @@
 	<div class="values-list">
 		{#each values as v, i}
 			<article class="value" class:first={i === 0}>
-				<p class="caption value-num"><span class="glyph">§</span> {v.num} · {v.name.toUpperCase()}</p>
+				<p class="caption value-num">
+					<span class="glyph">§</span>
+					{v.num} · {v.name.toUpperCase()}
+				</p>
 				<h3>{v.name}</h3>
 				<p class="value-body">{v.body}</p>
 			</article>
@@ -72,19 +75,19 @@
 		<p>
 			When the work begins, the principal is named, the deliverables are named, and the end
 			condition is named — when this engagement is done, what is true that wasn't before. Weekly
-			written check-ins go to whoever needs to know status. Architecture decisions get written
-			down in your repository, with the trade-offs and the date.
+			written check-ins go to whoever needs to know status. Architecture decisions get written down
+			in your repository, with the trade-offs and the date.
 		</p>
 		<p>
 			We work inside your team, your tools, and your repository. We follow your code-review
 			conventions. We commit under our own names and credit the engineers we paired with. When the
-			engagement ends, what we leave behind is a system another engineer — one we've never met —
-			can read and own.
+			engagement ends, what we leave behind is a system another engineer — one we've never met — can
+			read and own.
 		</p>
 		<p>
-			We will tell you when you don't need us. We will tell you when a problem is the wrong size
-			for our shape. We will tell you, before you write a check, when a survey is going to come
-			back saying "the system is fine, fix the team."
+			We will tell you when you don't need us. We will tell you when a problem is the wrong size for
+			our shape. We will tell you, before you write a check, when a survey is going to come back
+			saying "the system is fine, fix the team."
 		</p>
 	</div>
 </section>
@@ -97,13 +100,13 @@
 	<div class="prose narrow-prose">
 		<p>
 			The principal is Robbie Freeman. Eighteen years of building software, the last eight focused
-			on the systems SMBs depend on. The work tends to fall into three lanes that overlap more
-			than people expect: <strong>cloud architecture</strong> — serverless, VM fleets, and the
-			decision between them; <strong>the data layer</strong> — Postgres, GraphQL, and schemas
-			designed to survive year three; and <strong>scoping and coordination</strong> — the parts
-			of senior engineering that aren't writing code. The codebases he's owned range from Rails
-			monoliths older than some of the engineers using them to serverless TypeScript shipped this
-			quarter. The systems run today inside healthcare-adjacent and fintech-adjacent SMBs.
+			on the systems SMBs depend on. The work tends to fall into three lanes that overlap more than
+			people expect: <strong>cloud architecture</strong> — serverless, VM fleets, and the decision
+			between them; <strong>the data layer</strong> — Postgres, GraphQL, and schemas designed to
+			survive year three; and <strong>scoping and coordination</strong> — the parts of senior engineering
+			that aren't writing code. The codebases he's owned range from Rails monoliths older than some of
+			the engineers using them to serverless TypeScript shipped this quarter. The systems run today inside
+			healthcare-adjacent and fintech-adjacent SMBs.
 		</p>
 		<p>
 			The bench is a small set of senior engineers Freeman Endeavors works with by name, brought
@@ -111,8 +114,8 @@
 			intentionally unnamed in public — confidentiality is part of how we work.
 		</p>
 		<p>
-			What this means in practice: you get a principal who's accountable, plus the right
-			specialist when the work calls for one, and nobody you didn't ask for.
+			What this means in practice: you get a principal who's accountable, plus the right specialist
+			when the work calls for one, and nobody you didn't ask for.
 		</p>
 	</div>
 </section>

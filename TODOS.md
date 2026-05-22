@@ -43,7 +43,7 @@ Deferred work captured during /plan-eng-review on 2026-05-15. Each entry: what /
 (b) "How a Postgres schema charges interest" — schema and query design that survives year three, for the Data Layer lens at §03.B.
 Target length 2,000–3,000 words. Frontmatter follows the existing essay Zod schema.
 
-**Why.** The homepage §03 makes three load-bearing capability claims. Case studies prove them as engagements. A long-form essay proves them as *thinking* — the kind a founder cites when they recommend the firm to another founder. The audit-front-door essay already demonstrates this format works.
+**Why.** The homepage §03 makes three load-bearing capability claims. Case studies prove them as engagements. A long-form essay proves them as _thinking_ — the kind a founder cites when they recommend the firm to another founder. The audit-front-door essay already demonstrates this format works.
 
 **Pros.** Highest-leverage reinforcement of the §03 positioning. Demonstrable opinion in long form is what differentiates senior consultancies from staffing agencies. SEO-positive — both candidate titles target real founder queries.
 
@@ -52,4 +52,3 @@ Target length 2,000–3,000 words. Frontmatter follows the existing essay Zod sc
 **Context.** Deferred from the SELECTIVE EXPANSION cherry-pick ceremony in /plan-ceo-review on 2026-05-19. The §03 block on `/` ships first; this essay lands as its own commit once Robbie has a clear two-to-three-hour writing window. Existing essay infrastructure (`src/routes/writing/<slug>/+page.svelte.md`, `layout: essay`, Zod-validated frontmatter) is already in place.
 
 **Depends on.** §03 positioning copy shipped (this PR).
-
