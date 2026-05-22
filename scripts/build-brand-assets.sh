@@ -83,4 +83,8 @@ render_lockup "$BRAND/lockup/lockup-horizontal.svg" "/tmp/og-lockup.png" 1040 "$
 magick -size 1200x630 "xc:$CREAM" "/tmp/og-lockup.png" -gravity center -composite "$BRAND/og/og-default.png"
 rm -f /tmp/og-lockup.png
 
+# --- LinkedIn banner (1584x396, figure-wide scene right; viewBox 1584x396) ---
+mkdir -p "$BRAND/social"
+render_lockup "$BRAND/social/linkedin-banner.svg" "$BRAND/social/linkedin-banner-1584.png" 1584 "$SRC/figure-wide.png" 1140 30 380 311
+
 echo "Brand assets rendered to $BRAND"

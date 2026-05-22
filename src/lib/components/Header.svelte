@@ -139,8 +139,14 @@
 		width: auto;
 	}
 
+	:global(html[data-theme='dark']) .brand-lockup {
+		background: var(--surface);
+		isolation: isolate;
+	}
+
 	:global(html[data-theme='dark']) .brand-lockup img {
-		filter: invert(0.92) hue-rotate(180deg) saturate(0.85);
+		filter: invert(1) hue-rotate(180deg);
+		mix-blend-mode: lighten;
 	}
 
 	.brand-lockup:hover {

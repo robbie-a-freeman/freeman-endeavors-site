@@ -14,7 +14,7 @@ test('contact page exposes a mailto fallback', async ({ page }) => {
 	const mailto = page.locator('a[href^="mailto:"]').first();
 	await expect(mailto).toBeVisible();
 	const href = await mailto.getAttribute('href');
-	expect(href).toContain('contact@freemanendeavors.com');
+	expect(href).toContain('robbie@freemanendeavors.com');
 });
 
 test('simulated bookingSuccessful fires the Plausible event', async ({ page }) => {

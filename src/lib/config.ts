@@ -7,7 +7,7 @@ export const SITE = {
 	name: 'Freeman Endeavors',
 	domain: 'freemanendeavors.com',
 	url: 'https://freemanendeavors.com',
-	email: 'contact@freemanendeavors.com',
+	email: 'robbie@freemanendeavors.com',
 	twitter: '',
 	linkedin: 'https://www.linkedin.com/company/freeman-endeavors',
 	titleSuffix: 'Freeman Endeavors',
