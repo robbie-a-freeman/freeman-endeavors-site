@@ -1,83 +1,81 @@
-<script>
-	import Header from './Header.svelte';
-	import './styles.css';
-	import { fade } from 'svelte/transition';
+<script lang="ts">
+	import '../app.css';
 	import { onMount } from 'svelte';
+	import Header from '$lib/components/Header.svelte';
+	import Footer from '$lib/components/Footer.svelte';
+	import { SITE } from '$lib/config';
 
-	let loaded = false;
-	onMount(() => loaded = true);
+	let { children } = $props();
+	let mounted = $state(false);
+
+	onMount(() => {
+		mounted = true;
+
+		// Legacy hash-anchor migration: visitors on /#expertise or /#contact
+		// get rewritten to canonical URLs without a reload.
+		const hash = window.location.hash;
+		if (hash === '#expertise') {
+			history.replaceState(null, '', '/services/');
+			window.location.assign('/services/');
+		} else if (hash === '#contact') {
+			history.replaceState(null, '', '/contact/');
+			window.location.assign('/contact/');
+		}
+	});
 </script>
 
-	<div class="app">
-		{#if loaded}
-		<Header />
+<svelte:head>
+	<!--
+		Plausible (T19). Domain configured in src/lib/config.ts.
+		Custom event `architecture_call_booked` fires from /contact/ on
+		Cal.com's bookingSuccessful callback.
+	-->
+	<script
+		defer
+		data-domain={SITE.domain}
+		src="https://plausible.io/js/script.tagged-events.js"
+	></script>
+</svelte:head>
 
-		<main in:fade="{{duration: 2000}}">
-			<slot />
-		</main>
+<a href="#main" class="skip-link">Skip to content</a>
 
-		<footer>
-			<p>Copyright © Freeman Endeavors LLC</p>
-		</footer>
-		{/if}
-	</div>
+<div class="layout" class:loaded={mounted}>
+	<Header />
+	<main id="main">
+		{@render children()}
+	</main>
+	<Footer />
+</div>
 
 <style>
-	.app {
+	.skip-link {
+		position: absolute;
+		left: -9999px;
+		top: 0;
+		background: var(--ink);
+		color: var(--surface);
+		padding: var(--s-3) var(--s-4);
+		z-index: 100;
+	}
+
+	.skip-link:focus {
+		left: var(--s-4);
+		top: var(--s-3);
+	}
+
+	.layout {
+		opacity: 0;
+		transition: opacity var(--t-entry) var(--ease);
+		min-height: 100vh;
 		display: flex;
 		flex-direction: column;
-		min-height: 100vh;
-		background-color: var(--secondary-color);
 	}
 
-	:global(html) {
-		background-color: var(--secondary-color);
-		width:100%;
-	}
-
-	:global(body) {
-		width: fit-content;
-		
+	.layout.loaded {
+		opacity: 1;
 	}
 
 	main {
 		flex: 1;
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-		color: #fff;
-		background-color: var(--secondary-color);
-		font-family: 'Roboto';
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
-	}
-	@media (min-width: 1100px) {
-		:global(body) {
-			display: contents;
-		}
-	}
-	@media (max-width: 1100px) {
-		:global(body) {
-			padding-left: 50px;
-		}
 	}
 </style>

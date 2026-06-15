@@ -1,6 +1,5 @@
 .DS_Store
 node_modules
-yarn.lock
 /build
 /.svelte-kit
 /package
@@ -11,3 +10,11 @@ yarn.lock
 .output
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+.gstack/
+.netlify/
+/playwright-report
+/test-results
+
+# proprietary
+work-findings
+.claude/worktrees/

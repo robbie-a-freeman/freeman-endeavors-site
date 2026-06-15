@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+	<rect width="1200" height="630" fill="#FAF7F2" />
+	<rect x="80" y="80" width="1040" height="470" fill="none" stroke="#D5CFC4" stroke-width="1" />
+	<text
+		x="120"
+		y="160"
+		font-family="JetBrains Mono, ui-monospace, monospace"
+		font-size="20"
+		letter-spacing="2"
+		fill="#6B6B66"
+	>
+		§ FREEMAN · ENDEAVORS
+	</text>
+	<text
+		x="120"
+		y="380"
+		font-family="Fraunces, Georgia, serif"
+		font-weight="500"
+		font-size="92"
+		fill="#1A1A18"
+		letter-spacing="-2"
+	>
+		Freeman
+	</text>
+	<text
+		x="120"
+		y="490"
+		font-family="Fraunces, Georgia, serif"
+		font-weight="500"
+		font-size="92"
+		fill="#1A4D2E"
+		letter-spacing="-2"
+		font-style="italic"
+	>
+		Endeavors
+	</text>
+	<text
+		x="120"
+		y="540"
+		font-family="Instrument Sans, system-ui, sans-serif"
+		font-size="20"
+		fill="#6B6B66"
+	>
+		Software consulting that ships outcomes, not decks.
+	</text>
+</svg>

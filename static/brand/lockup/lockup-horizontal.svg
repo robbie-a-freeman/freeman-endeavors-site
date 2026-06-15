@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 160" role="img" aria-label="Freeman Endeavors horizontal lockup">
+  <image href="../source/figure-square.png" x="0" y="0" width="160" height="160" preserveAspectRatio="xMidYMid meet"/>
+
+  <line x1="180" y1="38" x2="180" y2="128" stroke="#B8B3A6" stroke-width="1"/>
+
+  <text x="206" y="92" font-family="'Fraunces Variable', Fraunces, Georgia, 'Times New Roman', serif" font-size="58" font-weight="500" fill="#1A1A18" letter-spacing="-1" style="font-variation-settings: 'opsz' 144, 'SOFT' 50, 'WONK' 0;">Freeman Endeavors</text>
+
+  <text x="206" y="122" font-family="'Instrument Sans', system-ui, sans-serif" font-size="13" font-weight="500" fill="#2E2D29" letter-spacing="2.2">SOFTWARE CONSULTING</text>
+</svg>

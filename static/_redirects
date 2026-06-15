@@ -1,0 +1,5 @@
+# Netlify redirect map.
+# Hash anchors (/#expertise, /#contact) can't be 301'd server-side — handled
+# client-side in src/routes/+layout.svelte via location.hash inspection.
+#
+# Add new redirects below as the site evolves.
