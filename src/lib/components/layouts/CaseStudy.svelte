@@ -77,7 +77,7 @@
 		<div class="footer-grid">
 			<div>
 				<h2>A similar problem in your system?</h2>
-				<p>The architecture call is free. We listen, we ask, we tell you what we'd do.</p>
+				<p>The consultation is free. We listen, we ask, we tell you what we'd do.</p>
 			</div>
 			<div><BookCallCTA size="large" /></div>
 		</div>

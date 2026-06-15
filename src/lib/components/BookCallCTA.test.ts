@@ -5,7 +5,7 @@ import BookCallCTA from './BookCallCTA.svelte';
 describe('BookCallCTA', () => {
 	it('renders the locked CTA copy', () => {
 		const { getByText } = render(BookCallCTA);
-		expect(getByText('Book a 45-minute architecture call')).toBeInTheDocument();
+		expect(getByText('Book a free consultation')).toBeInTheDocument();
 	});
 
 	it('links to /contact/', () => {

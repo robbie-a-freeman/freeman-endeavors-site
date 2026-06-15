@@ -11,7 +11,7 @@ export const SITE = {
 	twitter: '',
 	linkedin: 'https://www.linkedin.com/company/freeman-endeavors',
 	titleSuffix: 'Freeman Endeavors',
-	tagline: 'Software consulting that ships outcomes, not decks.'
+	tagline: 'We guide you through your software endeavors.'
 } as const;
 
 /**
@@ -30,8 +30,8 @@ export const PLAUSIBLE_EVENT_BOOKED = 'architecture_call_booked';
  * Locked primary CTA copy (design doc requirement; single source of truth).
  */
 export const CTA = {
-	primary: 'Book a 45-minute architecture call',
-	primaryShort: 'Book a call',
+	primary: 'Book a free consultation',
+	primaryShort: 'Book a free call',
 	href: '/contact/'
 } as const;
 

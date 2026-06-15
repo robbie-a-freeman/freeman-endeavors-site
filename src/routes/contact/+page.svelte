@@ -121,12 +121,12 @@
 
 <Meta
 	title="Book a call"
-	description="A free 45-minute architecture call. Tell us what's broken — we'll tell you plainly whether we're the right team, and what an honest next step looks like."
+	description="A free 45-minute consultation. Tell us what's broken — we'll tell you plainly whether we're the right team, and what an honest next step looks like."
 />
 
 <section class="container intro">
 	<p class="caption">Contact</p>
-	<h1>Book a 45-minute architecture call.</h1>
+	<h1>Book a 45-minute consultation.</h1>
 	<p class="lede">
 		Free. No prep. We listen, we ask, we tell you what we'd do. If we're not the right team, we'll
 		say so.

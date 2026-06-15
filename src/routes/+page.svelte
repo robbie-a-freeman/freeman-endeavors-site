@@ -16,7 +16,7 @@
 </script>
 
 <Meta
-	title="Software consulting that ships"
+	title="Freeman Endeavors Software Consulting"
 	description="Software consulting for SMBs, opinionated about cloud architecture, the data layer, and scoping. Starts with a fixed-price architecture survey."
 />
 
@@ -31,12 +31,13 @@
 			<p class="hero-eyebrow"><span class="glyph">§</span> A SOFTWARE CONSULTANCY</p>
 			<h1>We can guide you through your software endeavors.</h1>
 			<p class="lede">
-				Meet Freeman Endeavors: we help SMBs build, ship, and maintain distributed cloud systems you
-				can depend on.
+				Apps? Webapps? Distributed systems, mission-critical notifications? Agentic workflows?
+				Whether you're trying to build, scale, automate, or modernize, we're here to help.
 			</p>
 			<br />
 			<p class="lede">
-				Whether you're trying to build, scale, automate, or modernize, we're here to help.
+				Meet Freeman Endeavors: we help SMBs build, ship, and maintain production systems you can
+				depend on.
 			</p>
 		</div>
 
@@ -48,8 +49,8 @@
 			<div class="margin-item">
 				<p class="margin-label"><span class="num">§ 01</span> · DISCOVERY</p>
 				<p class="margin-body">
-					A free 45-minute discovery call focused on your architectural requirements. Tell us what
-					your situation is and we'll assess how we can help.
+					A free 45-minute consultation. Tell us what your situation is and we'll assess how we can
+					help.
 				</p>
 			</div>
 
@@ -101,21 +102,23 @@
 				A two-week, fixed-price read of your system. Where it's brittle, what to fix first, what to
 				ignore.
 			</p>
-			<span class="caption tile-foot">Fixed-price · {`~`}2-4 weeks →</span>
+			<span class="caption tile-foot">Fixed-price · 2 weeks →</span>
 		</a>
 		<a href="/services/#fractional" class="service-tile">
 			<h3>Fractional Engineering Leadership</h3>
 			<p>
-				Embedded technical leadership for teams between hires. We run the engineering function for
-				one to four days a week until your full-time hire is up.
+				Embedded technical leadership for companies with technical needs without technical teams, or
+				for teams between leadership hires. We customize our involvement based on the roles you need
+				from us.
 			</p>
 			<span class="caption tile-foot">Monthly retainer →</span>
 		</a>
 		<a href="/services/#modernization" class="service-tile">
 			<h3>Legacy Modernization</h3>
 			<p>
-				Replatform an aging system without breaking the business it runs. Migrations, integrations,
-				and the slow careful work of trustworthy systems.
+				Restructure and replatform an aging system without breaking the business it runs. This
+				includes migrations, integrations, and dependency swaps/updates, as well as other services
+				peformed to extend software to match the business needs.
 			</p>
 			<span class="caption tile-foot">Project-scoped →</span>
 		</a>
@@ -175,26 +178,26 @@
 	<div class="opinions-list">
 		<article class="opinion">
 			<p class="caption opinion-tag">
-				<span class="glyph">§</span> 03.A · CLOUD, SERVERLESS, AND VM FLEETS
+				<span class="glyph">§</span> 03.A · Distributed Systems in the Cloud
 			</p>
 			<p class="opinion-body">
-				We've shipped all three: Lambda + API Gateway services running at scale, Kubernetes
-				footprints sized for a SaaS doing real revenue, and Linux-VM fleets where the right answer
-				was not to abstract the hardware. Maintaining software at an enterprise scale while keeping
-				costs down is attainable through good decisionmaking and sound development processes.
+				We've deployed all kinds of distributed systems: Lambda + API Gateway services running at
+				scale, mission-critical kafka brokers sustaining thousands of events, and Linux-VM fleets.
+				Maintaining software at an enterprise scale while keeping costs down is attainable through
+				good decisionmaking and sound development processes.
 			</p>
 		</article>
 
 		<article class="opinion">
 			<p class="caption opinion-tag">
-				<span class="glyph">§</span> 03.B · THE DATA LAYER
+				<span class="glyph">§</span> 03.B · The API Layer
 			</p>
 			<p class="opinion-body">
-				Postgres, GraphQL, and the joints between them. Most SMB systems are fine until year three,
-				when the schema decisions made at year one start charging interest — joins that should have
-				been denormalized, resolvers that hide an N+1, an index that everyone forgot to add. We read
-				your schema and your slowest queries before we read your application code. If the data layer
-				is wrong, nothing on top of it is going to hold up.
+				So many technical challenges are much harder than they need to be because of API schemas
+				that don't solve their intended problems, either because of design issues or because the
+				problem space has shifted since construction. We outline your problem space and then design
+				API contracts and associated schemas that fit the requirements. We work with REST, GraphQL,
+				GRPC, MCP, Pub/Sub, and whatever else your projects call for.
 			</p>
 		</article>
 
@@ -203,10 +206,10 @@
 				<span class="glyph">§</span> 03.C · ARCHITECTURE, SCOPING, AND COORDINATION
 			</p>
 			<p class="opinion-body">
-				The hardest part of senior engineering is not writing code. It's deciding what to build, in
-				what order, with what team — and being honest about which parts of the work you don't yet
-				know enough to estimate. We've owned that work for our own engagements, for client teams
-				between leadership hires, and for the engineers who pick up the code after we leave.
+				The hardest part of senior engineering is scoping and estimating. We're equipped to own that
+				work for all of our engagements. We work with project management and scoping flows on the
+				cutting edge with markdown and Linear, as well as traditional sprint-based planning in Jira
+				and Notion.
 			</p>
 		</article>
 	</div>

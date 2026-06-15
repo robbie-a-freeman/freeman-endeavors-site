@@ -2,7 +2,7 @@
 
 Working name: **Considered Editorial** · v0.1 · 2026-05-15
 
-Anchor: the four locked company values (Integrity, Fit-to-purpose, Communication, Stewardship). Every choice below should be defensible as "this expresses one of those values" or "this differentiates from the consultancy-template baseline our SMB audience has seen ten times this week."
+Anchor: the four locked company values (Integrity, Fit-to-purpose, Pedagogy, Collaboration). Every choice below should be defensible as "this expresses one of those values" or "this differentiates from the consultancy-template baseline our SMB audience has seen ten times this week." Canonical source is `VALUES.md`; if the two ever diverge, VALUES.md wins.
 
 ## Product Context
 
@@ -133,3 +133,4 @@ Redesigned surfaces, not inverted. Reduce saturation 10–15%.
 | 2026-05-15 | Tech-stack pills demoted                                                                                   | Current grid promotes commoditized tools; new design treats tools as a supporting one-line row, not a featured section. Per memory `feedback_positioning_copy.md`: tools are table stakes, not differentiators.                                                                           |
 | 2026-05-15 | Productized service offerings adopted (architecture survey / fractional leadership / legacy modernization) | Per PDF research + Corgibytes' "Code Health Check" playbook. Fixed-price entry offers lower the barrier to a first engagement.                                                                                                                                                            |
 | 2026-05-21 | "Architecture Audit" renamed to "Architecture Survey"                                                      | "Audit" carries overbearing/compliance connotations; "survey" reads as engineering mapping work. Anchor `#audit` → `#survey`; constants renamed; essay re-threaded so generic "audit" references contrast against ours.                                                                   |
+| 2026-06-02 | Values anchor synced with `VALUES.md`                                                                      | Anchor line still read "Communication, Stewardship"; both were stale. Communication was replaced by Pedagogy (this pass) to lean toward client teaching and our curiosity about the client's business; Stewardship had been replaced by Collaboration in an earlier values pass.          |

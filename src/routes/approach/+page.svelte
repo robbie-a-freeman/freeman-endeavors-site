@@ -6,38 +6,37 @@
 		{
 			num: '01',
 			name: 'Integrity',
-			body: 'When we commit to a deliverable or a date, we meet it. We prefer to underpromise and overdeliver.'
+			body: 'We strive for our yes to mean yes and our "when" to really mean "then". We take seriously our commitments to a deliverables and dates.'
 		},
 		{
 			num: '02',
 			name: 'Fit-to-purpose',
-			body: 'Solutions architected to your business requirements. Whether you need AI in production or a simple integration, we’ll tell you what the problem calls for — and then we’ll build it.'
+			body: 'Our solutions are crafted according to your business requirements. Whether you need AI in production or an internal mobile application, we can design a solution and build it to fit the core requirements.'
 		},
 		{
 			num: '03',
-			name: 'Communication',
-			body: 'You’ll always know what we’ve finished, what’s coming next, and what we need from you to keep moving. We’d rather over-communicate progress than leave you guessing about your own project.'
+			name: 'Pedagogy',
+			body: "It would be dishonest to pretend to know what we don't. Instead, we teach as we build, and we stay students of your business. If you have an existing system, you’ll leave knowing your system better than when we arrived; we’ll leave knowing your domain better than when we walked in."
 		},
 		{
 			num: '04',
 			name: 'Collaboration',
-			body: 'We work alongside your team, not around them. Engagements include knowledge transfer by default — we want your engineers to understand and own what we built, and we expect to learn from your business as much as we teach about ours.'
+			body: 'We work alongside you and your team. We do everything with shared knowledge in mind. You should be equipped to understand and own what we built, as opposed to being kept in the dark as we work in a remote cave.'
 		}
 	];
 </script>
 
 <Meta
 	title="Approach"
-	description="How we work: the four values we operate by, the methodology behind each engagement, and who actually shows up to your project."
+	description="How we work: the four values we operate by, and who actually shows up to your project."
 />
 
 <header class="page-header container">
 	<p class="caption">How we work</p>
-	<h1>A small firm, by intention.</h1>
+	<h1>Don't hike alone. Bring a friend!</h1>
 	<p class="lede">
-		Freeman Endeavors is a principal-led collective. The principal is on every engagement.
-		Collaborators come in by name when their craft is what the job calls for. The team scales to the
-		work; the work doesn't scale to the team.
+		The software wilderness can be a scary place of hidden costs, uncertain scope, and changing
+		capabilities. We have values and processes that we stand by to navigate this with you.
 	</p>
 </header>
 
@@ -63,68 +62,53 @@
 
 <section class="container section-block">
 	<div class="section-head">
-		<p class="caption section-eyebrow"><span class="glyph">§</span> 02 · Methodology</p>
-		<h2>What an engagement actually looks like.</h2>
+		<p class="caption section-eyebrow">
+			<span class="glyph">§</span> 02 · Principal Software Consultant
+		</p>
+		<h2>Robbie Freeman</h2>
 	</div>
-	<div class="prose narrow-prose">
-		<p>
-			Every engagement starts with a conversation, not a proposal. The 45-minute architecture call
-			is free, and the work-or-don't-work decision happens at the end of it. If we think you'd be
-			better served somewhere else, we say so.
-		</p>
-		<p>
-			When the work begins, the principal is named, the deliverables are named, and the end
-			condition is named — when this engagement is done, what is true that wasn't before. Weekly
-			written check-ins go to whoever needs to know status. Architecture decisions get written down
-			in your repository, with the trade-offs and the date.
-		</p>
-		<p>
-			We work inside your team, your tools, and your repository. We follow your code-review
-			conventions. We commit under our own names and credit the engineers we paired with. When the
-			engagement ends, what we leave behind is a system another engineer — one we've never met — can
-			read and own.
-		</p>
-		<p>
-			We will tell you when you don't need us. We will tell you when a problem is the wrong size for
-			our shape. We will tell you, before you write a check, when a survey is going to come back
-			saying "the system is fine, fix the team."
-		</p>
-	</div>
-</section>
-
-<section class="container section-block">
-	<div class="section-head">
-		<p class="caption section-eyebrow"><span class="glyph">§</span> 03 · The team</p>
-		<h2>The principal and the bench.</h2>
-	</div>
-	<div class="prose narrow-prose">
-		<p>
-			The principal is Robbie Freeman. Eighteen years of building software, the last eight focused
-			on the systems SMBs depend on. The work tends to fall into three lanes that overlap more than
-			people expect: <strong>cloud architecture</strong> — serverless, VM fleets, and the decision
-			between them; <strong>the data layer</strong> — Postgres, GraphQL, and schemas designed to
-			survive year three; and <strong>scoping and coordination</strong> — the parts of senior engineering
-			that aren't writing code. The codebases he's owned range from Rails monoliths older than some of
-			the engineers using them to serverless TypeScript shipped this quarter. The systems run today inside
-			healthcare-adjacent and fintech-adjacent SMBs.
-		</p>
-		<p>
-			The bench is a small set of senior engineers Freeman Endeavors works with by name, brought
-			into an engagement only when their craft is what the job calls for. The bench is real but
-			intentionally unnamed in public — confidentiality is part of how we work.
-		</p>
-		<p>
-			What this means in practice: you get a principal who's accountable, plus the right specialist
-			when the work calls for one, and nobody you didn't ask for.
-		</p>
+	<div class="team-grid">
+		<figure class="portrait">
+			<picture>
+				<source
+					type="image/webp"
+					srcset="/brand/team/robbie-freeman-600.webp 1x, /brand/team/robbie-freeman-1200.webp 2x"
+				/>
+				<img
+					src="/brand/team/robbie-freeman-600.jpg"
+					srcset="/brand/team/robbie-freeman-600.jpg 1x, /brand/team/robbie-freeman-1200.jpg 2x"
+					alt="Portrait of Robbie Freeman"
+					width="600"
+					height="600"
+					loading="lazy"
+					decoding="async"
+				/>
+			</picture>
+		</figure>
+		<div class="prose narrow-prose">
+			<p>
+				Robbie has founded and run Freeman Endeavors for the past 4 years, focused in particular on
+				software systems of startups and small-medium businesses. His software work has spanned
+				multiple industries including finance, commercial real estate, and education.
+			</p>
+			<p>
+				Robbie has lived in three different states: New Hampshire (best), Texas (eh), and New Jersey
+				(pretty good). When he's not building software systems, he plays badminton, makes single
+				origin pour-overs, tackles DIY projects around the house, and — as you may guess from this
+				site — goes on day hikes.
+			</p>
+			<p class="bio-contact">
+				Email more your style? Contact me directly at
+				<a href="mailto:robbie@freemanendeavors.com">robbie@freemanendeavors.com</a>.
+			</p>
+		</div>
 	</div>
 </section>
 
 <section class="container closing">
 	<div class="closing-grid">
 		<div>
-			<h2>If this sounds like the way you'd want to work, the call is free.</h2>
-			<p>Forty-five minutes, no deck, no follow-up unless you ask for one.</p>
+			<h2>If you're interested in working with us, book a call!</h2>
 		</div>
 		<div><BookCallCTA size="large" /></div>
 	</div>
@@ -173,6 +157,59 @@
 
 	.narrow-prose {
 		max-width: 38rem;
+	}
+
+	.team-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: var(--s-6);
+		align-items: start;
+	}
+
+	.portrait {
+		margin: 0;
+		max-width: 18rem;
+	}
+
+	.portrait img {
+		display: block;
+		width: 100%;
+		height: auto;
+		aspect-ratio: 1 / 1;
+		object-fit: cover;
+		background: var(--surface-2);
+	}
+
+	.portrait-caption {
+		margin: var(--s-3) 0 0;
+	}
+
+	.portrait-caption .glyph {
+		color: var(--brick);
+	}
+
+	.bio-contact {
+		color: var(--ink-2);
+		font-style: italic;
+		margin: 0 0 var(--s-5);
+	}
+
+	.bio-contact a {
+		color: var(--ink-1);
+		text-decoration: underline;
+		text-underline-offset: 0.2em;
+		text-decoration-thickness: 1px;
+	}
+
+	.bio-contact a:hover {
+		color: var(--brick);
+	}
+
+	@media (min-width: 720px) {
+		.team-grid {
+			grid-template-columns: minmax(14rem, 18rem) minmax(0, 1fr);
+			gap: var(--s-7);
+		}
 	}
 
 	.values-list {

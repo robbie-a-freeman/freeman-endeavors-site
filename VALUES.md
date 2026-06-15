@@ -4,15 +4,15 @@
 
 ### 1. Integrity
 
-When we commit to a deliverable or a date, we meet it. We prefer to underpromise and overdeliver.
+We want our yesses to mean yes. When we discuss a dated deliverable, we place first priority in meeting the scope. We prefer underpromising and overdelivering to making unstable commitments.
 
 ### 2. Fit-to-purpose
 
 Solutions architected to your business requirements. Whether you need AI in production or a simple integration, we'll tell you what the problem calls for — and then we'll build it.
 
-### 3. Communication
+### 3. Pedagogy
 
-You'll always know what we've finished, what's coming next, and what we need from you to keep moving. We'd rather over-communicate progress than leave you guessing about your own project.
+We teach as we build, and we stay students of your business. You'll leave knowing your system better than when we arrived; we'll leave knowing your domain better than when we walked in.
 
 ### 4. Collaboration
 
@@ -62,11 +62,17 @@ A standalone value the user explicitly liked. Was originally folded into Steward
 
 The "one throat to choke, no junior handoffs" value. Close call — researcher's market data backed it strongly — but cut as sounding too corporate for an SMB audience. The differentiator survives implicitly (Freeman Endeavors is a small collective; clients deal with the principal) and can be expressed in positioning copy rather than a values pillar.
 
+### Communication
+
+_You'll always know what we've finished, what's coming next, and what we need from you to keep moving. We'd rather over-communicate progress than leave you guessing about your own project._
+
+Held the #3 slot through the first redesign pass. Swapped out for Pedagogy when the user wanted the value to lean toward client teaching and our own curiosity about the client's business, rather than process-status transparency. The "always know status" promise survives implicitly in Integrity (we meet what we commit to) and as a behavior in the methodology section, but is no longer named as a values pillar. Revive if a future pass decides transparent status is the sharper differentiator vs. teaching.
+
 ### Clarity
 
 _You won't be in the dark about what we're building, why, or how it works. We work in diagrams and plain language, and we aim to leave you understanding your own system better than when we arrived._
 
-The predecessor to Communication. Originally framed around the **artifact** (you'll understand the system being built). Reframed to Communication when the user shifted the emphasis to **process** (you'll always know status). The artifact-clarity / client-teaching idea ultimately found its home in Collaboration ("we want your engineers to understand and own what we built").
+The predecessor to Communication. Originally framed around the **artifact** (you'll understand the system being built). Reframed to Communication when the user shifted the emphasis to **process** (you'll always know status). The artifact-clarity / client-teaching idea has now resurfaced as the core of Pedagogy in the locked four.
 
 ### Speed / Agility
 

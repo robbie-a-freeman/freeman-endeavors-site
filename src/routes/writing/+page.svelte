@@ -37,7 +37,7 @@
 	<div class="closing-grid">
 		<div>
 			<h2>Want to talk about something a piece raised?</h2>
-			<p>The architecture call is free. Forty-five minutes, no deck.</p>
+			<p>The consultation is free. Forty-five minutes, no deck.</p>
 		</div>
 		<div><BookCallCTA size="large" /></div>
 	</div>

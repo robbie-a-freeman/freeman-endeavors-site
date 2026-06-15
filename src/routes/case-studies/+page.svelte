@@ -37,8 +37,7 @@
 		<div>
 			<h2>Want to talk about a system like one of these?</h2>
 			<p>
-				The architecture call is free. Forty-five minutes, no deck, no follow-up unless you ask for
-				one.
+				The consultation is free. Forty-five minutes, no deck, no follow-up unless you ask for one.
 			</p>
 		</div>
 		<div><BookCallCTA size="large" /></div>

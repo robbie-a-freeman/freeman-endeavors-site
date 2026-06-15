@@ -30,7 +30,7 @@
 
 			<div class="margin-item">
 				<p class="margin-label"><span class="num">§ 01</span> INTAKE</p>
-				<p class="margin-body">A 45-minute architecture call. No deck, no pitch. Free.</p>
+				<p class="margin-body">A 45-minute consultation. No deck, no pitch. Free.</p>
 			</div>
 
 			<hr class="margin-rule" />

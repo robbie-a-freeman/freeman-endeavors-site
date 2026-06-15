@@ -22,7 +22,7 @@
 	<p class="lede">
 		The survey is the front door — a fixed-price, two-week read that lets you see how we work before
 		you commit to anything bigger. Fractional and modernization are how we keep going after the
-		survey, if you want us to.
+		survey.
 	</p>
 </header>
 
@@ -35,14 +35,16 @@
 </nav>
 
 <section id="survey" class="service container">
-	<SectionMarker number="01" label="Architecture Survey" as="h2" />
-	<h3 class="service-title">A written read of your system, in two weeks, for a flat fee.</h3>
+	<SectionMarker number="01" label="Architecture Survey" as="h2" variant="pill" />
+	<h3 class="service-title">A comprehensive report of your systems with actionable insights</h3>
 
 	<div class="service-grid">
 		<div class="service-body prose">
 			<p>
-				The survey is what we do when you know something's off and you want a second pair of eyes
-				before you spend real money on a fix. It is a fixed-price engagement: we read your code,
+				The survey is for clients who want a comprehensive, clinical snapshot of their software
+				systems, processes, and third-party tools in order to evaluate their readiness for outcomes.
+				Some examples of these outcomes: moving to another cloud provider, cost-cutting, AI
+				integrations, and dynamic usage scaling. It is a fixed-price engagement: we read your code,
 				your data model, your deploy story, and the three or four critical paths that keep your
 				business running, and we hand you a written document that says — plainly — where the system
 				is strong, where it's brittle, what we'd fix first, and what we'd leave alone.
@@ -50,33 +52,74 @@
 
 			<h4>What you get</h4>
 			<p>
-				A written architecture read of your system, roughly 4,000 to 6,000 words, walked through
-				live on a 90-minute call with you and whoever else needs to be in the room. After the
-				walkthrough we leave you with a prioritized recommendations document that another engineer —
-				ours, yours, or someone else's — can pick up and execute against.
+				A thorough, organized report of your system covering architecture, data, deploys, scaling,
+				and cost as one cohesive document, and applying to them any KPIs or goals your team has.
+				Alongside it: current-state architecture diagrams (your system as it's actually deployed,
+				drawn next to your system as your docs and IaC describe it), a services inventory of every
+				third-party system the application actually touches, a prioritized roadmap, and more
+				depending on your business requirements. If you have a unique analysis request, we're happy
+				to accomodate.
 			</p>
 
 			<p>
-				The deliverables stay yours. Nothing about the survey is locked to working with us
-				afterward. If you take our document, hand it to your existing team, and never call us again,
-				that's a successful survey by our definition.
+				We don't just tell you the what, but why. Every claim in every document traces back to
+				specific evidence — a file in your repo, a cloud API response, a git commit, a CI run, a
+				billing line. The evidence index and the full record of every read we did against your
+				systems ship alongside the deliverables, so anything in the report can be reproduced or
+				audited later by someone who wasn't on the call. The whole package renders as PDF, DOCX (so
+				your team can comment and edit it in Word or Google Docs), and HTML.
+			</p>
+
+			<p>
+				After we draft the report, we walk it through on a call with you and whoever else needs to
+				be in the room. The prioritized roadmap is a document another engineer — ours, yours, or
+				someone else's — can pick up and execute against. The deliverables stay yours. Nothing about
+				the survey is locked to working with us afterward. If you take our documents, hand them to
+				your existing team, and never call us again, that's a successful survey by our definition.
 			</p>
 
 			<h4>What we look for</h4>
 			<p>
-				The survey reads your system through three lenses. We have opinions about each of them, and
+				The survey reads your system from the cloud control plane down to the data layer, against
+				what your docs and intentions say it should be. We have opinions about each of these, and
 				the deliverable will name them out loud.
 			</p>
 			<ul class="look-for">
 				<li>
+					<strong>The system as deployed vs. the system as documented.</strong> Cloud APIs and IaC say
+					one thing. Your README and ADRs say another. The gap between them is usually where the surprises
+					live — we draw both, side by side.
+				</li>
+				<li>
+					<strong>Every third-party service your application actually touches.</strong> Active services
+					in HEAD, services removed in the last twelve months, services proposed in ADRs or TODOs but
+					never built. Generated from the code and git history, not from anyone's memory.
+				</li>
+				<li>
+					<strong>The data layer's three-year horizon.</strong> Schemas, indexes, slow queries, hot tables,
+					parameter-group anomalies. Most SMB systems are fine until year three — we read your schema
+					and your slowest queries before we read your application code.
+				</li>
+				<li>
+					<strong>The path from commit to production.</strong> DORA metrics with sample sizes and confidence
+					intervals (a point estimate from twelve PRs is noise, and we'll say so). Where deploys go quiet,
+					where rollbacks pile up, which step everyone has learned to work around.
+				</li>
+				<li>
+					<strong>Scaling risk and vulnerability surface.</strong> Static analysis on the application
+					code, dependency CVEs, secrets in git history, container and IaC checks. Findings get filtered
+					against your real growth profile — issues at scales you won't reach are kept separate from the
+					ones that will hit you next year.
+				</li>
+				<li>
+					<strong>Cloud cost.</strong> Idle resources, oversized instances, unattached volumes. Savings
+					figures get a conservative and an aggressive end, and every range cites the billing line it
+					came from.
+				</li>
+				<li>
 					<strong>The cloud/fleet decision.</strong> Serverless makes sense for some workloads and is
 					a budget bomb for others. VM fleets are the right answer more often than the industry admits.
 					We'll tell you which one you have, with numbers.
-				</li>
-				<li>
-					<strong>The data layer's three-year horizon.</strong> Schemas, indexes, GraphQL resolvers, and
-					the queries that get slower under load. Most SMB systems are fine until year three — we read
-					your schema and your slowest queries before we read your application code.
 				</li>
 				<li>
 					<strong>The roadmap items that have been "next quarter" for six quarters.</strong>
@@ -87,95 +130,80 @@
 
 			<h4>Who it's for</h4>
 			<p>
-				Founders and CTOs at small-and-mid-sized businesses where the engineering function has
-				started to feel opaque. The system runs, but you've stopped being sure why. The original
-				builder left. The recent rewrite didn't land. You're considering a rebuild and want to know
-				if that's actually the right answer before you commit a quarter of your runway to it.
-			</p>
-
-			<h4>What it's not</h4>
-			<p>
-				The survey is not a code review of every file. It's not a security pentest. It's not the fix
-				— we won't ship a single line of production code as part of the survey itself, and we won't
-				write the tests you need. Those are separate engagements, and we'll tell you which ones we
-				think you actually need.
+				Founders and decision-makers at startups and small-and-mid-sized businesses looking to plan
+				future steps or evaluate your software capital.
 			</p>
 		</div>
 
 		<aside class="service-aside">
 			<div class="pricebox">
-				<p class="caption">Fee</p>
-				<p class="price">{priceFmt.format(SURVEY_PRICE_USD)}</p>
 				<p class="caption">Calendar time</p>
 				<p class="meta">{SURVEY_DURATION}</p>
 				<p class="caption">Deliverable</p>
-				<p class="meta">Written read + 90-min walkthrough + recommendations doc</p>
+				<p class="meta">
+					Written read + architecture diagrams + 90-day roadmap + 90-min walkthrough
+				</p>
 			</div>
 			<div class="cta-block">
 				<BookCallCTA size="large" />
-				<p class="caption foot">First, a free 45-minute call. The survey is the next step after.</p>
+				<p class="caption foot">
+					First, a free consultation. We can get started on the survey soon after.
+				</p>
 			</div>
 		</aside>
 	</div>
 </section>
 
 <section id="fractional" class="service container">
-	<SectionMarker number="02" label="Fractional Leadership" as="h2" />
-	<h3 class="service-title">Embedded engineering leadership between hires.</h3>
+	<SectionMarker number="02" label="Fractional Leadership" as="h2" variant="pill" />
+	<h3 class="service-title">Embedded engineering leadership.</h3>
 
 	<div class="service-grid">
 		<div class="service-body prose">
 			<p>
-				Fractional engagements are for the moments when your team is real but the leadership seat is
-				empty — your tech lead just left, your CTO is buried in the next round, or you've grown past
-				the point where the founder can carry the whole engineering function on the side. We come in
-				as the senior engineering voice for one to four days a week, and we hold that seat until the
-				full-time hire is in and up to speed.
+				Fractional engagements are for when ongoing expertise and development is needed, but it's
+				most practical or feasible for such expertise to be an outside expert as opposed to
+				full-time in-house. We come in as the senior engineering force and serve you either
+				partially or in-full as you need. We provide everything from architecting to business advice
+				to development and product consulting for our clients. As needed, we leverage our partner
+				network to bring in experts to further enhance the project.
 			</p>
 
 			<h4>What you get</h4>
 			<p>
-				A named principal who shows up to your standups, your planning, your hiring loops, and your
-				incident reviews. Architecture decisions get made and written down. Code reviews happen and
-				the reviewer is somebody senior. Roadmaps have ranges on them. Your existing engineers stop
-				being the only people accountable for everything at once.
-			</p>
-
-			<p>
-				This is delivered work, not advisory work. We will write code where writing code is the
-				right answer. We will own incidents on call where that's the right answer. We are not a
-				fractional CTO product that shows up to a weekly meeting and emails a memo.
+				A named principal responsible for your software needs, capable of serving as your all-in-one
+				architect, engineering manager, developer, consultant, and product lead.
 			</p>
 
 			<h4>Who it's for</h4>
-			<p>
-				Teams of two to twelve engineers between leadership hires, or earlier-stage teams whose
-				founder-engineer is no longer the right person to own the engineering function but who don't
-				yet need — or can't yet afford — a full-time CTO.
-			</p>
-
-			<h4>What it's not</h4>
-			<p>
-				It is not a permanent placement. We agree on an end condition at the start: the new hire
-				lands, the system is stable enough to run for two quarters without senior intervention, the
-				project that prompted the engagement ships. When the end condition is met, the engagement
-				ends. Indefinite fractional engagements are a failure mode, not a goal.
-			</p>
+			<ol>
+				<li>
+					Non-technical companies building or maintaining mission-critical software systems in need
+					of competant management and direction.
+				</li>
+				<li>
+					Teams undergoing a period of change (growth, implementing SOC processes, acquisition,
+					etc.) and in need of temporary leadership.
+				</li>
+				<li>
+					Early stage companies and startups where expertise is required but it doesn't yet make
+					financial sense to bring an expert on full-time.
+				</li>
+			</ol>
 		</div>
 
 		<aside class="service-aside">
 			<div class="pricebox">
 				<p class="caption">Structure</p>
-				<p class="meta">Monthly retainer, weekly scope</p>
+				<p class="meta">Monthly retainer</p>
 				<p class="caption">Time commitment</p>
-				<p class="meta">1–4 days per week, named</p>
-				<p class="caption">Ends when</p>
-				<p class="meta">Agreed exit condition is met</p>
+				<p class="meta">Weekly or monthly hour allotment</p>
 			</div>
 			<div class="cta-block">
 				<BookCallCTA size="large" />
 				<p class="caption foot">
-					Pricing depends on time commitment and engagement length. We'll quote it on the call.
+					Pricing depends on time commitment and engagement length, which we can discuss in the free
+					consultation.
 				</p>
 			</div>
 		</aside>
@@ -183,50 +211,43 @@
 </section>
 
 <section id="modernization" class="service container">
-	<SectionMarker number="03" label="Legacy Modernization" as="h2" />
-	<h3 class="service-title">Replatforming systems without breaking the business.</h3>
+	<SectionMarker number="03" label="Legacy Modernization" as="h2" variant="pill" />
+	<h3 class="service-title">Bring the business up to standards without breaking the business.</h3>
 
 	<div class="service-grid">
 		<div class="service-body prose">
 			<p>
-				Modernization is the slow careful work of taking a system that runs your business and
+				Don't fall behind neglecting modernization when things are changing so fast in the industry.
+				Modernization is the necessary work of taking a system that runs your business and
 				rebuilding the parts of it that hold you back, without ever taking the rest of it offline.
-				Database migrations. API extractions. Framework upgrades that have been pushed to next
-				quarter for the last six quarters. The kinds of projects that fail loudly when they're
-				rushed and quietly when they're under-resourced.
+				This work includes database migrations, API extractions, and developer workflow integrations
+				using AI. Think your framework upgrades that have been pushed to next quarter for the last
+				six quarters.
 			</p>
 
 			<h4>What you get</h4>
 			<p>
-				A project with a written plan, fixed milestones, and a real handoff at the end. We work
-				inside your repository, against your existing team's review process, with feature flags and
-				incremental cutovers wherever there's a system already in production. Every change lands
-				behind a verification step. Every milestone is something you could ship to production today
-				if we walked away at that point.
+				A project beginning with a written proposal of services, fixed milestones, and a real
+				handoff at the end. We work inside your repository, against your existing team's review
+				process, with feature flags and incremental cutovers wherever there's a system already in
+				production. Every change lands behind a verification step. Every milestone is something you
+				could ship to production today if we walked away at that point.
 			</p>
 
 			<p>
-				Code that ships includes tests, runbooks, and documentation aimed at the engineer who will
-				own it after we leave. That engineer is not us. Collaboration is one of our four values; we
-				treat the post-handoff readability of code — and the knowledge transfer that goes with it —
-				as part of the deliverable, not polish.
+				Code that ships includes tests, runbooks, and documentation written to last. Collaboration
+				and pedagogy are two of our four core values, so we treat the readability of our changes,
+				and the knowledge transfer that goes with it, as part of the deliverable.
 			</p>
 
 			<h4>Who it's for</h4>
 			<p>
 				Businesses with a system in production that's still load-bearing but is starting to slow you
 				down — hires take too long to onboard, every feature ships with a side of regression, the
-				framework is two majors behind, the database is one wrong query from a stall. Common
-				examples: a Rails 4 monolith that needs to be a Rails 7 monolith, a 2017-era React + REST
-				app that wants to be Next.js + GraphQL, a Python 2 service that has run out of runway.
-			</p>
-
-			<h4>What it's not</h4>
-			<p>
-				It is not a rewrite-from-scratch. We do not believe in rewriting your system from a blank
-				editor. If our read of the codebase points to that conclusion, the survey would have said so
-				first, and we'd point you at a different team. The right team for a true greenfield rebuild
-				is usually not the right team for a careful modernization, and vice versa.
+				framework is two majors behind, the database is one wrong query from a stall. Some examples:
+				a Rails 4 monolith that needs to be a Rails 7 monolith, a 2017-era React + REST app that
+				wants to be Next.js + GraphQL, a monolithic REST architecture that needs to scale
+				dynamically for fluctuating traffic.
 			</p>
 		</div>
 
@@ -241,9 +262,7 @@
 			</div>
 			<div class="cta-block">
 				<BookCallCTA size="large" />
-				<p class="caption foot">
-					Scope and price are project-specific. The survey is the cleanest path to a real estimate.
-				</p>
+				<p class="caption foot">Scope and price are project-specific.</p>
 			</div>
 		</aside>
 	</div>
@@ -267,10 +286,6 @@
 	}
 
 	.toc {
-		border-top: 1px solid var(--rule);
-		border-bottom: 1px solid var(--rule);
-		padding-top: var(--s-3);
-		padding-bottom: var(--s-3);
 		margin-bottom: var(--s-9);
 	}
 
@@ -280,24 +295,34 @@
 		margin: 0;
 		display: flex;
 		flex-wrap: wrap;
-		gap: var(--s-5);
+		gap: var(--s-3);
 	}
 
+	/* Ghost outline pill — matches SectionMarker variant="pill". These are
+	 * real jump-links, so they get an interactive hover (border darkens). */
 	.toc a {
+		display: inline-block;
 		font-family: var(--font-mono);
 		font-size: var(--fs-caption);
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
 		color: var(--ink-2);
 		text-decoration: none;
+		padding: 0.55rem 0.9rem;
+		border: 1px solid var(--rule-strong);
+		border-radius: var(--r-sm);
+		transition:
+			border-color var(--t-state) var(--ease),
+			color var(--t-state) var(--ease);
 	}
 
 	.toc a:hover {
 		color: var(--ink);
+		border-color: var(--ink);
 	}
 
 	.toc .glyph {
-		color: var(--brick);
+		color: var(--forest);
 	}
 
 	.service {
