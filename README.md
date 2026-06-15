@@ -63,7 +63,6 @@ schemas in `src/lib/content/schema.ts`. The build fails on any violation.
 2. **Plausible** — register `architecture_call_booked` as a custom event on the dashboard.
 3. **OG default** — convert `static/og/og-default.svg` to `static/og/og-default.png` (see `static/og/README.md`).
 4. **Case study consent** — written/recorded approval from each anonymized client (TODOS.md context).
-5. **Survey pricing** — confirm `SURVEY_PRICE_USD` in `src/lib/config.ts`.
 
 ## Adding content
 

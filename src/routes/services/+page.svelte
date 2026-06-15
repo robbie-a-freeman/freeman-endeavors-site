@@ -2,13 +2,6 @@
 	import Meta from '$lib/components/Meta.svelte';
 	import BookCallCTA from '$lib/components/BookCallCTA.svelte';
 	import SectionMarker from '$lib/components/SectionMarker.svelte';
-	import { SURVEY_PRICE_USD, SURVEY_DURATION } from '$lib/config';
-
-	const priceFmt = new Intl.NumberFormat('en-US', {
-		style: 'currency',
-		currency: 'USD',
-		maximumFractionDigits: 0
-	});
 </script>
 
 <Meta
@@ -138,7 +131,7 @@
 		<aside class="service-aside">
 			<div class="pricebox">
 				<p class="caption">Calendar time</p>
-				<p class="meta">{SURVEY_DURATION}</p>
+				<p class="meta">~2 weeks</p>
 				<p class="caption">Deliverable</p>
 				<p class="meta">
 					Written read + architecture diagrams + 90-day roadmap + 90-min walkthrough

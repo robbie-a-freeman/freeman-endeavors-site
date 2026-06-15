@@ -34,10 +34,3 @@ export const CTA = {
 	primaryShort: 'Book a free call',
 	href: '/contact/'
 } as const;
-
-/**
- * Architecture Survey pricing (T20). Published number on /services/.
- * Refine in V1.1 with conversion data; an unpublished price is a worse failure.
- */
-export const SURVEY_PRICE_USD = 12000;
-export const SURVEY_DURATION = '~2 weeks';
